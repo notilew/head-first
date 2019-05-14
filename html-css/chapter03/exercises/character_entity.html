@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Entidades HTML</title>
+
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+				margin-right: 50px;
+				margin-left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Entidades HTML</h2>
+		<p>
+			Os caracteres reservados no HTML devem ser substituídos por entidades de caracteres. Caracteres que não estão presentes no teclado também podem ser substituídos por entidades. Alguns caracteres são reservados em HTML. Se você usar os sinais menor que (<) ou maior que (>) em seu texto, o navegador poderá misturá-los com tags. Entidades de caracteres são usadas para exibir caracteres reservados em HTML. Uma entidade de caracter é assim:
+		</p>
+		<p>
+			&entity_name;<br>
+			ou<br>
+			&#entity_number;
+		</p>
+		<p>
+			Para exibir um sinal menor que (<), devemos escrever: <strong>&amp;lt;</strong> ou <strong>&amp;#60;</strong>
+		</p>
+		<p>
+			<strong>Vantagem de usar um nome de entidade:</strong> Um nome de entidade é fácil de lembrar.
+		</p>
+		<p>
+			<strong>Desvantagem de usar um nome de entidade:</strong> Os navegadores podem não suportar todos os nomes de entidades, mas o suporte para números é bom.
+		</p>
+
+		<h2>Espaço Inquebrável</h2>
+		<p>
+			Uma entidade de caractere comum usada em HTML é o espaço sem quebra: <strong>&amp;nbsp;</strong> Um espaço sem quebra é um espaço que não entrará em uma nova linha. Duas palavras separadas por um espaço inquebrável ficarão juntas (não entre uma nova linha). Isso é útil quando quebrar as palavras pode ser pertubador.
+		</p>
+		<p>
+			Exemplos:
+		</p>
+		<ul>			
+			<li>R$&nbsp;10,00</li>
+			<li>10&nbsp;km/h</li>
+			<li>10&nbsp;PM</li>
+		</ul>
+		<p>
+			Outro uso comum do espaço inquebravél é impedir que os navegadores trunquem espaços em páginas HTML. Se você escrever 10 espaços em seu texto, o navegador removerá 9 deles. Para adicionar espaços reais ao seu texto, você pode usar a entidade de caractere <strong>&amp;nbsp;</strong>
+		</p>
+		<p>
+			O hífen sem quebra (<strong>&amp;#8209</strong>) permite que você use um hífen (-) que não irá quebrar.
+		</p>
+	</body>
+</html>
