@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  color: gray;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+}
+
+
+/*
+ * criando classes:
+ * green-tea,
+ * raspberry-ice,
+ * blueberry-bliss,
+ * cranberry-antioxidant,
+ * adicionando as classes citadas acima aos elementos <p> para alterar a cor de texto de cada parágrafo
+ */
+
+p.green-tea {
+  color: green;
+}
+
+p.raspberry-ice {
+  color: blue;
+}
+
+p.blueberry-bliss {
+  color: purple;
+}
+
+p.cranberry-antioxidant {
+  color: maroon;
+}

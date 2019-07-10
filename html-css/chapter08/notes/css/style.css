@@ -1,0 +1,212 @@
+body {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  background-color: #F2F2F2;
+  width: 950px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+p.paragrafos {
+  text-align: justify;
+}
+
+.negrito {
+  font-weight: bolder;
+}
+
+p.codigos {
+  font-family: monospace;
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+span.verdana {
+  font-family: Verdana, sans-serif;
+}
+
+span.arial-black {
+  font-family: 'Arial Black', sans-serif;
+}
+
+span.trebuchet-ms {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+span.arial {
+  font-family: Arial, sans-serif;
+}
+
+span.geneva {
+  font-family: Geneva, sans-serif;
+}
+
+span.times {
+  font-family: Times, serif;
+}
+
+span.times-new-roman {
+  font-family: 'Times New Roman', serif;
+}
+
+span.georgia {
+  font-family: Georgia, serif;
+}
+
+span.source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+}
+
+span.inconsolata {
+  font-family: Inconsolata, monospace;
+}
+
+span.roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+span.comic-sans {
+  font-family: 'Comic Sans', cursive;
+}
+
+span.apple-chancery {
+  font-family: 'Apple Chancery', cursive;
+}
+
+span.last-ninja {
+  font-family: 'Last Ninja', fantasy;
+}
+
+span.impact {
+  font-family: Impact, fantasy;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+p.tags {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #000000;
+  padding: 10px;
+  width: 25%;
+}
+
+p.lighter {
+  font-weight: lighter;
+}
+
+p.normal {
+  font-weight: normal;
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+p.bolder {
+  font-weight: bolder;
+}
+
+p.none {
+  text-decoration: none;
+}
+
+p.underline {
+  text-decoration: underline;
+}
+
+p.overline {
+  text-decoration: overline;
+}
+
+p.line-through {
+  text-decoration: line-through;
+}
+
+p.paragrafos-cores {
+  text-align: center;
+}
+
+span.cores {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #000000;
+  padding: 5px 60px;
+  margin-left: 10px;
+}
+
+
+/*
+ * criando classes que receberão as cores do exemplo da propriedade color
+ */
+
+span.aqua {
+  background-color: aqua;
+}
+
+span.black {
+  background-color: black;
+}
+
+span.blue {
+  background-color: blue;
+}
+
+span.fucshia {
+  background-color: fuchsia;
+}
+
+span.gray {
+  background-color: gray;
+}
+
+span.green {
+  background-color: green;
+}
+
+span.lime {
+  background-color: lime;
+}
+
+span.maroon {
+  background-color: maroon;
+}
+
+span.navy {
+  background-color: navy;
+}
+
+span.olive {
+  background-color: olive;
+}
+
+span.purple {
+  background-color: purple;
+}
+
+span.red {
+  background-color: red;
+}
+
+span.silver {
+  background-color: silver;
+}
+
+span.teal {
+  background-color: teal;
+}
+
+span.white {
+  background-color: white;
+}
+
+span.yellow {
+  background-color: yellow;
+}
