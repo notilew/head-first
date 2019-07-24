@@ -116,3 +116,14 @@ Endereço para pesquisa de codificação de caracteres.
 - Para validar folhas de estilo e verificar se foram escritas corretamente.
 
   - http://jigsaw.w3.org/css-validator/
+
+
+=======================================
+=== SITE DE HOSPEDAGEM DE WEB FONTS ===
+=======================================
+
+- Font Squirrel:
+  - https://www.fontsquirrel.com/
+
+- Google Fonts:
+  - https://fonts.google.com/

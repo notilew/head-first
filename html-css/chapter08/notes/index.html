@@ -151,6 +151,42 @@
   <p class="tags underline"><span>underline</span></p>
   <p class="tags overline"><span>overline</span></p>
   <p class="tags line-through"><span>line-through</span></p>
+
+  <h2>Como as Web Fonts funcionam</h2>
+  <p class="paragrafos">
+    Com as <strong>Web Fonts</strong>, você pode tirar vantagem de uma nova capacidade dos browsers modernos que permitem que você entregue novas fontes direto a seus usuários.
+  </p>
+
+  <h3>Formatos de Fontes</h3>
+  <p>Formatos Comuns:</p>
+  <ul>
+    <li>
+      <strong>Fontes True Type Fonts: .ttf</strong> - Fontes True Type e OpenType são próximas; a OpenType é construída por cima da True Type e é mais recente que a True Type.
+    </li>
+    <li>
+      <strong>Fontes Open Type Fonts: .otf</strong>
+    </li>
+    <li>
+      <strong>Fontes Embedded Open Type: .eot</strong> - É uma fonte compacta da Open Type. É registrada (Microsoft) e suportada apenas pelo IE.
+    </li>
+    <li>
+      <strong>Fontes SVG: .svg</strong> - Scalable Vector Graphics é um formato gráfico genérico, e as fontes SVG usam esse formato para representar os caracteres.
+    </li>
+    <li>
+      <strong>Fontes Web Open Font Format: .woff</strong> - É baseada na True Type e está sendo desenvolvida como padrão para as Web Fonts. É bem suportada pela maioria dos browsers.
+    </li>
+  </ul>
+
+  <h3>Propriedade @font-face</h3>
+  <p class="codigos">
+    <code>
+        <strong>@font-face</strong> { <br>
+          &nbsp;<strong>font-family:</strong> 'Nome da Fonte'; <br>
+          &nbsp;<strong>src:</strong> url('path relativo ou URL da fonte'), <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url('path relativo ou URL da fonte'); <br>
+        }
+      </code>
+  </p>
 </body>
 
 </html>

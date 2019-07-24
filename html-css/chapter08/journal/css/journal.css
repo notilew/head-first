@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Advent Pro Bold';
+  src: url('../fonts/advent-pro-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Advent Pro Regular';
+  src: url('../fonts/advent-pro-regular.ttf');
+}
+
+body {
+  font-family: 'Advent Pro Regular', sans-serif;
+  font-size: small;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Advent Pro Bold', sans-serif;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 120%;
+}
