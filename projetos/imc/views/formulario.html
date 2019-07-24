@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produto - PDV Web</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/formulario.css">
+</head>
+
+<body>
+    <h2>Calculadora do IMC</h2>
+
+    <p>A classificação do índice de massa corporal (<strong>IMC</strong>), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.</p>
+    <p>Além de saber qual é o seu <strong>IMC</strong>, essa calculadora também indica qual deve ser o seu peso ideal e quantas calorias você deve ingerir para alcançar a sua melhor forma, e assim melhorar sua qualidade de vida, garantindo o seu bem estar.</p>
+
+    <form>
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Seu nome aqui...">
+        </p>
+
+        <p>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+                <option value="1">Homem</option>
+                <option value="2">Mulher</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="idade">Idade</label>
+            <input type="text" id="idade" placeholder="35 anos">
+        </p>
+
+        <p>
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" placeholder="1.75 metros de altura">
+        </p>
+
+        <p>
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" placeholder="75.5 Kg">
+        </p>
+
+        <p>
+            <button type="button" onclick="formularioController()">
+                Calcular
+            </button>
+        </p>
+    </form>
+
+    <script type="text/javascript" src="../models/classes/classificacao.js"></script>
+    <script type="text/javascript" src="../models/classes/imc.js"></script>
+    <script type="text/javascript" src="../models/classes/pessoa.js"></script>
+    <script type="text/javascript" src="../controllers/formulario.js"></script>
+</body>
+
+</html>
