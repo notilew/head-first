@@ -1,44 +1,43 @@
 var IMC =
-  (function() {
-    'use strict';
+    (function() {
+        'use strict';
 
-    function IMC() {
+        function IMC() {
 
-      this.imc = 0;
-      this.tabela = [];
+            this.tabela = [];
 
-      this.calculaIMC = function(peso, altura) {
-        var imc = 0;
+            this.calculaIMC = function(peso, altura) {
+                var imc = 0;
 
-        imc = parseFloat(peso) / (parseFloat(altura) * parseFloat(altura));
+                imc = parseFloat(peso) / (parseFloat(altura) * parseFloat(altura));
 
-        this.imc = parseFloat(imc.toFixed(1));
-      }
+                return parseFloat(imc.toFixed(1));
+            }
 
-      this.inicializaArrayTabela = function() {
-        this.tabela = [
-          18.5,
-          24.9,
-          29.9,
-          34.9,
-          39.9,
-          40.0
-        ];
-      }
+            this.inicializaArrayTabela = function() {
+                this.tabela = [
+                    18.5,
+                    24.9,
+                    29.9,
+                    34.9,
+                    39.9,
+                    40.0
+                ];
+            }
 
-      this.retornaIndiceDaTabela = function() {
-        if (this.tabela.length === 0) {
-          this.inicializaArrayTabela();
+            this.retornaIndiceDaTabela = function(imc) {
+                if (this.tabela.length === 0) {
+                    this.inicializaArrayTabela();
+                }
+
+                for (var i = 0; i <= this.tabela.length; i++) {
+                    if (imc <= this.tabela[i]) {
+                        return i;
+                    }
+                }
+            }
+
         }
 
-        for (var i = 0; i <= this.tabela.length; i++) {
-          if (this.imc <= this.tabela[i]) {
-            return i;
-          }
-        }
-      }
-
-    }
-
-    return IMC;
-  })();
+        return IMC;
+    })();

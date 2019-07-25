@@ -1,17 +1,17 @@
 function _calculaIMCModel(pessoa) {
 
-  if (pessoa.peso && pessoa.altura) {
-    var imc = new IMC();
+    if (pessoa.peso && pessoa.altura) {
+        var imc = new IMC();
 
-    imc.calculaIMC(pessoa.peso, pessoa.altura);
+        pessoa.imc = imc.calculaIMC(pessoa.peso, pessoa.altura);
 
-    if (imc.imc) {
-      classificacao.indice = imc.retornaIndiceDaTabela();
+        if (pessoa.imc) {
+            var classificacao = new Classificacao();
 
-      classificacao.verificaClassificacao();
+            pessoa.classificacao = imc.retornaIndiceDaTabela(pessoa.imc);
 
-      return classificacao;
+            pessoa.classificacao = classificacao.retornaDescricaoDaClassificacao(pessoa.classificacao);
+        }
     }
-  }
 
 }
