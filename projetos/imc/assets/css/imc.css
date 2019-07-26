@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Open Sans Condensed Bold';
+    src: url('../fonts/open-sans-condensed-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed Light';
+    src: url('../fonts/open-sans-condensed-light.ttf');
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans Condensed Light', sans-serif;
     font-size: medium;
     background-color: #f7f7f7;
     margin: 0 auto;
@@ -9,6 +19,15 @@ body {
 div.container {
     background-color: #ffffff;
     padding: 5% 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans Condensed Bold';
 }
 
 h2 {
@@ -69,4 +88,18 @@ button {
     border-radius: 5px;
     padding: 1.5%;
     width: 100%;
+}
+
+#resultado {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#resultado p {
+    text-align: center;
+}
+
+#classificacao {
+    margin: 0 auto;
+    width: 30%;
 }
