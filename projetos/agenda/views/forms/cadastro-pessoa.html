@@ -9,7 +9,27 @@
 <body>
     <h2>Cadastro de Pessoa</h2>
 
+    <form method="get" action="cadastro.php">
+        <label for="nome"></label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="50">
+
+        <label for="sobrenome"></label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" maxlength="50">
+
+        <label for="sexo"></label>
+        <select name="sexo" id="sexo">
+            <option value="1">Masculino</option>
+            <option value="2">Feminino</option>
+        </select>
+
+        <label for="nascimento"></label>
+        <input type="date" name="nascimento" id="nascimento" min="1950-12-31" max="2099-12-31">
+
+        <button type="submit" id="cadastrar">Cadastrar</button>
+    </form>
+
     <script type="text/javascript" src="../../constructors/pessoa.js"></script>
+    <script type="text/javascript" src="../../controllers/create/person/pessoa-controller.js"></script>
 </body>
 
 </html>

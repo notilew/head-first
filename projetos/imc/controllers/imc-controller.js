@@ -1,15 +1,15 @@
 (function(document) {
-  'use strict';
+    'use strict';
 
-  document.getElementById('p-calcular').addEventListener('click', function(evento) {
-    evento.stopPropagation();
+    document.getElementById('p-calcular').addEventListener('click', function(evento) {
+        evento.stopPropagation();
 
-    if (evento.target.localName === 'button') {
-      var flag = true;
+        if (evento.target.localName === 'button') {
+            var flag = true;
 
-      if (!document.getElementById('nome').value) { flag = false; }
-    }
-  });
+            if (!document.getElementById('nome').value) { flag = false; }
+        }
+    });
 })(document);
 
 /* function _calculaIMCCOntroller() {

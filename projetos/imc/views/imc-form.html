@@ -2,105 +2,103 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <title>Cadastro de Produto - PDV Web</title>
-  <link type="text/css" rel="stylesheet" href="../assets/css/imc.css">
+    <meta charset="utf-8">
+    <title>Cadastro de Produto - PDV Web</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/imc.css">
 </head>
 
 <body>
-  <h2>Calculadora do IMC</h2>
+    <h2>Calculadora do IMC</h2>
 
-  <div class="container">
-    <p>A classificação do\5 índice de massa corporal (<strong>IMC</strong>), pode ajudar a identificar obesidade
-      ou desnutrição em crianças, adolescentes, adultos e idosos.</p>
-    <p>Além de saber qual é o seu <strong>IMC</strong>, essa calculadora também indica qual deve ser o seu peso
-      ideal e quantas calorias você deve ingerir para alcançar a sua melhor forma, e assim melhorar sua
-      qualidade de vida, garantindo o seu
-      bem estar.</p>
+    <div class="container">
+        <p>A classificação do\5 índice de massa corporal (<strong>IMC</strong>), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.</p>
+        <p>Além de saber qual é o seu <strong>IMC</strong>, essa calculadora também indica qual deve ser o seu peso ideal e quantas calorias você deve ingerir para alcançar a sua melhor forma, e assim melhorar sua qualidade de vida, garantindo o seu bem
+            estar.</p>
 
-    <form>
-      <p>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Seu nome aqui...">
-      </p>
+        <form>
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome aqui...">
+            </p>
 
-      <p>
-        <label for="sexo">Sexo</label>
-        <div id="div-sexo">
-          <button type="button" id="btn-homen">Homem</button>
-          <button type="button" id="btn-mulher">Mulher</button>
-        </div>
-      </p>
+            <p>
+                <label for="sexo">Sexo</label>
+                <div id="div-sexo">
+                    <button type="button" id="btn-homen">Homem</button>
+                    <button type="button" id="btn-mulher">Mulher</button>
+                </div>
+            </p>
 
-      <p>
-        <label for="idade">Idade</label>
-        <input type="text" id="idade" placeholder="35 anos">
-      </p>
+            <p>
+                <label for="idade">Idade</label>
+                <input type="text" id="idade" placeholder="35 anos">
+            </p>
 
-      <p>
-        <label for="altura">Altura</label>
-        <input type="text" id="altura" placeholder="1.75 metros de altura">
-      </p>
+            <p>
+                <label for="altura">Altura</label>
+                <input type="text" id="altura" placeholder="1.75 metros de altura">
+            </p>
 
-      <p>
-        <label for="peso">Peso</label>
-        <input type="text" id="peso" placeholder="75.5 Kg">
-      </p>
+            <p>
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" placeholder="75.5 Kg">
+            </p>
 
-      <p id="p-calcular">
-        <button type="button" id="btn-calcular">
+            <p id="p-calcular">
+                <button type="button" id="btn-calcular">
           Calcular
         </button>
-      </p>
-    </form>
+            </p>
+        </form>
 
-    <div id="resultado">
+        <div id="resultado">
 
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Classificação</th>
+                    <th>IMC</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="descricao">Abaixo do Peso</td>
+                    <td>Menor que 18.5</td>
+                </tr>
+                <tr>
+                    <td class="descricao">Peso Normal</td>
+                    <td>Entre 18.5 e 24.9</td>
+                </tr>
+                <tr>
+                    <td class="descricao">Sobrepeso</td>
+                    <td>Entre 25 e 29.9</td>
+                </tr>
+                <tr>
+                    <td class="descricao">Obesidade Grau I</td>
+                    <td>Entre 30 e 34.9</td>
+                </tr>
+                <tr>
+                    <td class="descricao">Obesidade Grau II</td>
+                    <td>Entre 35 e 39.9</td>
+                </tr>
+                <tr>
+                    <td class="descricao">Obesidade Grau III</td>
+                    <td>Maior do que 40</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Classificação</th>
-          <th>IMC</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td class="descricao">Abaixo do Peso</td>
-          <td>Menor que 18.5</td>
-        </tr>
-        <tr>
-          <td class="descricao">Peso Normal</td>
-          <td>Entre 18.5 e 24.9</td>
-        </tr>
-        <tr>
-          <td class="descricao">Sobrepeso</td>
-          <td>Entre 25 e 29.9</td>
-        </tr>
-        <tr>
-          <td class="descricao">Obesidade Grau I</td>
-          <td>Entre 30 e 34.9</td>
-        </tr>
-        <tr>
-          <td class="descricao">Obesidade Grau II</td>
-          <td>Entre 35 e 39.9</td>
-        </tr>
-        <tr>
-          <td class="descricao">Obesidade Grau III</td>
-          <td>Maior do que 40</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <script type="text/javascript" src="../models/constructors/classificacao.js"></script>
-  <script type="text/javascript" src="../models/constructors/imc.js"></script>
-  <script type="text/javascript" src="../models/constructors/pessoa.js"></script>
-  <script type="text/javascript" src="../models/imc-model.js"></script>
-  <script type="text/javascript" src="../controllers/imc-controller.js"></script>
-  <script type="text/javascript" src="../assets/js/utils.js"></script>
+    <script type="text/javascript" src="../models/constructors/classificacao.js"></script>
+    <script type="text/javascript" src="../models/constructors/imc.js"></script>
+    <script type="text/javascript" src="../models/constructors/pessoa.js"></script>
+    <script type="text/javascript" src="../models/imc-model.js"></script>
+    <script type="text/javascript" src="../controllers/imc-controller.js"></script>
+    <script type="text/javascript" src="../assets/js/globals.js"></script>
+    <script type="text/javascript" src="../assets/js/utils.js"></script>
 </body>
 
 </html>
