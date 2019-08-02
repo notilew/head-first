@@ -1,7 +1,7 @@
 (function(window) {
     'use strict';
 
-    window.pessoa =
+    window.Pessoa =
         function Pessoa() {
             var nome = undefined;
             var sobrenome = undefined;

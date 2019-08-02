@@ -1,7 +1,7 @@
 (function(window) {
     'use strict';
 
-    window.endereco =
+    window.Endereco =
         function Endereco() {
             var tipo = undefined;
             var logradouro = undefined;

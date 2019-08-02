@@ -1,7 +1,7 @@
 (function(window) {
     'use strict';
 
-    window.telefone =
+    window.Contato =
         function Contato() {
             var fixo = undefined;
             var movel = undefined;

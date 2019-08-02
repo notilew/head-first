@@ -16,7 +16,16 @@
 
             alert('Preencha todos os campos!');
         } else {
-            alert('Cadastrando...');
+            evento.preventDefault();
+
+            var pessoa = new window.Pessoa();
+
+            pessoa.setNome(document.getElementById('nome').value);
+            pessoa.setSobrenome(document.getElementById('sobrenome').value);
+            pessoa.setSexo(document.getElementById('sexo').value);
+            pessoa.setNascimento(document.getElementById('nascimento').value);
+
+            validaPessoa(pessoa);
         }
     });
 })(window, document);
