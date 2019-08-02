@@ -1,5 +1,17 @@
-var sexo = undefined;
+(function(window, document) {
+  'use strict';
 
-function defineSexo(valor) {
-    sexo = valor;
-}
+  window.sexo = undefined;
+
+  document.querySelector('#btn-homen').addEventListener('click', function(evento) {
+    evento.stopPropagation();
+
+    window.sexo = 1;
+  });
+
+  document.querySelector('#btn-mulher').addEventListener('click', function(evento) {
+    evento.stopPropagation();
+
+    window.sexo = 2;
+  });
+})(window, document);
