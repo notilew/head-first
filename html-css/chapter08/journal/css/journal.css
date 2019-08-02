@@ -10,21 +10,27 @@
 
 body {
   font-family: 'Advent Pro Regular', sans-serif;
-  font-size: small;
+  font-size: medium;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Advent Pro Bold', sans-serif;
+h2 {
+  color: #cc6600;
 }
 
 h1 {
-  font-size: 150%;
+  font-family: 'Advent Pro Bold', sans-serif;
+  font-size: 170%;
 }
 
 h2 {
-  font-size: 120%;
+  font-size: 130%;
+  font-weight: normal;
+  border-bottom-style: dotted;
+  border-bottom-width: thin;
+  border-bottom-color: #888;
+}
+
+blockquote {
+  font-style: italic;
 }

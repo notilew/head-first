@@ -13,7 +13,7 @@ body {
     font-size: medium;
     background-color: #f7f7f7;
     margin: 0 auto;
-    width: 40%;
+    width: 70%;
 }
 
 div.container {
@@ -31,11 +31,11 @@ h6 {
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 130%;
     text-align: center;
     color: #ffffff;
     background-color: #000000;
-    padding: 2.5% 1.5%;
+    padding: 1.5%;
     margin-bottom: 0;
     width: 35%;
 }
@@ -99,7 +99,13 @@ button {
     text-align: center;
 }
 
-#classificacao {
-    margin: 0 auto;
-    width: 30%;
+table {
+  text-align: center;
+  padding: 2.5% 0;
+  margin: 0 auto;
+  width: 50%;
+}
+
+tr.destaque {
+  background-color: #bcf5a9;
 }
