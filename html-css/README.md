@@ -179,3 +179,18 @@ Endereço para pesquisa de codificação de caracteres.
 
 - Google Fonts:
   - https://fonts.google.com/
+
+===========================
+=== MODELO DE CAIXA CSS ===
+===========================
+
+- O Modelo de Caixa é como as CSS vêem os elementos. As CSS tratam cada elemento como se ele representasse uma caixa. Cada caixa é formada por uma área de conteúdo com enchimentos, bordas e margens opcionais.
+
+- A caixa é composta por:
+
+  * A área de conteúdo armazena o conteúdo - um texto ou uma imagem, por exemplo.
+  * A área de conteúdo é cercada por um enchimento transparente opcional.
+  * Uma borda opcional pode ser colocada em torno do enchimento.
+  * E, finalmente uma margem transparente opcional circunda tudo isso.
+
+- Todos os elementos são tratados como caixa, elementos em bloco ou em linha.  

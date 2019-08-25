@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cálculo Salário Líquido</title>
+  <link type="text/css" rel="stylesheet" href="../assets/css/fonts.css">
+  <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <h1>Cálculo Salário Líquido</h1>
+
+  <p>
+    Este cálculo demonstra como obter um valor de salário líquido a partir do salário bruto e dos principais descontos do salário (<strong>INSS</strong> e <strong>IRRF</strong>).
+  </p>
+
+  <form>
+    <div>
+      <label for="salario-bruto">Salário Bruto:</label>
+      <input type="number" id="salario-bruto" name="salario-bruto" placeholder="R$0,00">
+    </div>
+
+    <div>
+      <label for="numero-dependentes">Dependentes:</label>
+      <input type="number" id="numero-dependentes" name="numero-dependentes" max="0" min="10" placeholder="1">
+    </div>
+
+    <div>
+      <label for="outros-descontos">Descontos:</label>
+      <input type="number" id="outros-descontos" name="outros-descontos" placeholder="R$0,00">
+    </div>
+
+    <div>
+      <button type="button" id="btn-calcular">
+        Calcular
+      </button>
+    </div>
+  </form>
+
+  <div id="bloco-resultado">
+    <h2>Resultado</h2>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <th class="texto-esquerda">Tabela IRRF:</th>
+          <td><a href="#">Tabela IRRF 2015</a></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">Tabela INSS:</th>
+          <td><a href="#">Tabela INSS 2019</a></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">Salário Bruto:</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">Dependentes:</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">Descontos:</th>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Evento</th>
+          <th>Referência</th>
+          <th>Proventos</th>
+          <th>Descontos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="texto-esquerda">Salário Bruto</th>
+          <td>-</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">IRRF</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">INSS</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="texto-esquerda">Descontos</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan="2">Totais</th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan="2">Salário Líquido</th>
+          <td colspan="2"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="../models/salario.model.js"></script>
+  <script type="text/javascript" src="../controllers/calcula-salario.controller.js"></script>
+</body>
+
+</html>
