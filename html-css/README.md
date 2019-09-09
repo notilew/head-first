@@ -88,14 +88,49 @@ Endereço para pesquisa de codificação de caracteres.
 - Altera a cor de fundo de um elemento.
   background-color:
 
-- Adiciona uma borda em torno do elemento.
-  border:
+- Controla o estilo visual da borda (solid, doube, groove, outset, inset, dotted, dashed e ridge).
+  border-style:
+
+- Controla a espessura da borda, pode ser especificado por px ou palavras-chave (thin, medium e thick).
+  border-width:
+
+- Controla a cor de uma borda, pode ser especificado com palavras chave, rgb ou hexadecimal.
+  border-color:
+
+- Controla a borda nos 4 lados.
+  border-top-color:
+  border-top-width:
+  border-top-style:
+
+  border-right-color:
+  border-right-width:
+  border-right-style:
+
+  border-bottom-color:
+  border-bottom-width:
+  border-bottom-style:
+
+  border-left-color:
+  border-left-width:
+  border-left-style:
+
+- Controla o arredondamento dos cantos das bordas, pode ser especificado em px ou em.
+  border-radius:
+
+- Controla o arredondamento dos 4 cantos das bordas.
+  border-top-left-radius:
+  border-top-right-radius:
+  border-bottom-right-radius:
+  border-bottom-left-radius:
 
 - Altera a decoração de um texto do elemento (underline, overline e line-through).
   text-decoration: underline; Adiciona um sublinhado abaixo do texto.
 
-- Altera o espaço entre o limite de um elemento e seu conteúdo.
+- Altera o espaço entre o limite de um elemento e seu conteúdo (enchimento), pode ser especificado com px ou % da área dentro da borda.
   padding:
+
+- Altera o o espaço entre elementos (margem), pode ser especificado com px ou % da área dentro da borda.
+  margin:
 
 - Posiciona um elemento do lado esquerdo.
   left:
@@ -106,8 +141,14 @@ Endereço para pesquisa de codificação de caracteres.
 - Altera a aparência de itens de lista em uma lista.
   list-style:
 
-- Insere uma imagem por trás de um elemento.
-  background-image:
+- Define a imagem do fundo de um elemento.
+  background-image: url('');
+
+- Fixa a posição da imagem de fundo, pode ser especificada em pixels, porcentagem ou usando palavras chaves (top, left, bottom, right ou center).
+  background-position:
+
+- Controla o ladrilhado (repetição) da imagem de fundo. Pode ser especificado: repeat - faz com que a imagem se repita tanto na horizontal, quanto na vertical. Esse é o comportamento padrão; no-repeat - mostra a imagem uma vez, não repete a imagem; repeat-x - repete a imagem apenas na horizontal; repeat-y - repete a imagem apenas na vertical; inherit - apenas faz o que o elemento pai fizer;
+  background-repeat:
 
 ===================================
 === AJUSTANDO TAMANHO DE FONTES ===
@@ -193,4 +234,38 @@ Endereço para pesquisa de codificação de caracteres.
   * Uma borda opcional pode ser colocada em torno do enchimento.
   * E, finalmente uma margem transparente opcional circunda tudo isso.
 
-- Todos os elementos são tratados como caixa, elementos em bloco ou em linha.  
+- Todos os elementos são tratados como caixa, elementos em bloco ou em linha.
+
+=====================
+=== MEDIA QUERIES ===
+=====================
+
+- Permite especificar regras de estilo CSS para diferentes dispositivos e telas. Podemos utilizar o recurso de media queries de duas formas: 1 - dentro do próprio elemento ou 2 - dentro de uma folha de estilo CSS. Existe uma grande variedade de propriedades que você pode usar em sua queries, como min-device-width: (dispositivo com largura mínima de), max-device-width: (dispositivo com largura máxima), print (quando o tipo de mídia for uma impressora, visualizando a página em uma impressora), orientation: (portrait (retrato), landscape (paisagem)),
+
+  <link type="text-css" rel="stylesheet" href="style.css" media="screen and (max-device-width: 480px)">
+  <link type="text-css" rel="stylesheet" href="style.css" media="screen and (min-device-width: 480px)">
+  <link type="text-css" rel="stylesheet" href="style.css" media="print">
+
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    h3 {
+      color: red;
+    }
+  }
+
+  @media screen and (min-device-width: 1024px) and (orientation: landscape) {
+    h3 {
+      color: yellow;
+    }
+  }
+
+  @media print {
+    h3 {
+      color: green;
+    }
+  }
+
+  h3 {
+    color: blue;
+  }
+
+  Apenas as regras CSS que são específicas para um tipo de mídia estão incluídas em uma regra @media. Todas as regras comuns a todos os tipos de mídia estão incluídos no arquivo CSS abaixo das regras @media, então dessa forma você não tem nenhum regra repetida desnecessariamente.
