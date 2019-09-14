@@ -1,0 +1,26 @@
+@media screen and (min-width: 480px) {
+    body {
+        font-size: medium;
+        font-family: 'Advent Pro Regular', sans-serif;
+        color: #8a4b08;
+        background-image: url('../img/background-image-coffee.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        margin: 10% auto;
+        width: 940px;
+    }
+
+    h1,
+    h2 {
+        font-family: 'Advent Pro Bold', sans-serif;
+    }
+
+    h1 {
+        font-size: 170%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+}

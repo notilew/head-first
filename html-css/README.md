@@ -114,7 +114,7 @@ Endereço para pesquisa de codificação de caracteres.
   border-left-width:
   border-left-style:
 
-- Controla o arredondamento dos cantos das bordas, pode ser especificado em px ou em.
+- Controla o arredondamento dos cantos das bordas, pode ser especificado em px ou em (escala).
   border-radius:
 
 - Controla o arredondamento dos 4 cantos das bordas.
@@ -269,3 +269,12 @@ Endereço para pesquisa de codificação de caracteres.
   }
 
   Apenas as regras CSS que são específicas para um tipo de mídia estão incluídas em uma regra @media. Todas as regras comuns a todos os tipos de mídia estão incluídos no arquivo CSS abaixo das regras @media, então dessa forma você não tem nenhum regra repetida desnecessariamente.
+
+  As características de mídia max-device-width e min-device-width dependem do tamanho da tela do dispositivo (não da largura da janela do browser). E ser você se preocupar mais com o tamanho do browser? Bem, você pode usar as propriedades max-width e min-width, que representam a largura máxima e mínima da janela do browser (não o tamanho da tela).
+
+  <link type="text/css" rel="stylesheet" href="style.css" media="screen (min-width: 481px)">
+  <link type="text/css" rel="stylesheet" href="style.css" media="screen (max-width: 480px)">
+
+  - Especificações sobre Media Queries:
+    - https://www.w3.org/TR/css3-mediaqueries/
+    - Livro: Head First Mobile Web
