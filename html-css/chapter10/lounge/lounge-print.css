@@ -1,0 +1,104 @@
+@media print {
+    body {
+        font-size: small;
+        font-family: Times, 'Times New Roman', serif;
+        line-height: 140%;
+        margin: 10px 40px 10px 40px;
+        width: 700px;
+    }
+
+    h1,
+    h2 {
+        color: black;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    #guarantee {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        line-height: 150%;
+        color: #222;
+        border-style: solid;
+        border-color: black;
+        border-width: thin;
+        padding: 25px 25px 25px 25px;
+        margin-right: 240px;
+        margin-left: 30px;
+    }
+
+    #elixirs {
+        font-size: x-small;
+        font-family: Verdana, Helvetica, Arial, sans-serif;
+        color: black;
+        border-style: double;
+        border-width: thin;
+        border-color: #007e7e;
+        background-color: white;
+        background-image: url('images/background.gif');
+        background-repeat: repeat-x;
+        background-position: top center;
+        width: 200px;
+        padding: 0px 20px 20px 20px;
+        margin-left: 25px;
+        text-align: center;
+    }
+
+    #elixirs a:link {
+        color: #007e7e;
+    }
+
+    #elixirs a:visited {
+        color: #333;
+    }
+
+    #elixirs a:hover {
+        background-color: #f88396;
+        color: #0d5353;
+    }
+
+    #elixirs h2 {
+        color: #000;
+    }
+
+    #elixirs h3 {
+        color: #d12c47;
+    }
+
+    #elixirs img {
+        padding-top: 20px;
+    }
+
+    #elixirs p {
+        line-height: 1%;
+    }
+
+    #footer {
+        font-size: 50%;
+        text-align: center;
+        line-height: normal;
+        margin-top: 30px;
+    }
+
+    .artist {
+        font-weight: bold;
+    }
+
+    .cd {
+        font-style: italic;
+    }
+
+    body p a:link {
+        color: #007e7e;
+    }
+
+    body p a:visited {
+        color: #333;
+    }
+}

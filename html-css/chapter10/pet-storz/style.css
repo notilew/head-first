@@ -1,0 +1,29 @@
+@media screen and (min-width: 480px) {
+  body {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  h1 {
+    font-size: 180%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 160%;
+  }
+
+  #cats p {
+    padding: 15px 15px 15px 100px;
+    background-color: #007e7e;
+    text-align: justify;
+  }
+
+  #dogs p {
+    padding: 15px 15px 15px 100px;
+    background-color: #004e4e;
+    text-align: justify;
+  }
+}
