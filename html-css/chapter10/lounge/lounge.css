@@ -1,11 +1,6 @@
 @media screen and (min-width: 481px) {
     body {
-        font-size: medium;
-        font-family: Verdana, Helvetica, Arial, sans-serif;
-        line-height: 160%;
-        margin: 0 auto;
-        width: 1024px;
-        height: 768px;
+        font: medium/160% Verdana, Helvetica, Arial, sans-serif;
     }
 
     h1,
@@ -25,45 +20,63 @@
         font-size: 110%;
     }
 
-    #guarantee {
-        line-height: 190%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
+    p#guarantee {
+        font: italic medium/190% 'Times New Roman', Times, serif;
         color: #444;
-        border-color: #fff;
-        border-width: thin;
-        border-style: dashed;
-        background-color: #a7cece;
-        padding: 25px;
-        padding-left: 80px;
-        margin: 30px;
-        margin-right: 250px;
-        background-image: url('images/background.gif');
-        background-repeat: no-repeat;
-        background-position: top left;
+        border: thin dashed #fff;
+        padding: 25px 25px 25px 80px;
+        margin: 30px 250px 30px 30px;
+        background: #a7cece url('images/background.gif') no-repeat top left;
     }
 
-    #elixirs {
-        border-style: solid;
-        border-width: thin;
-        border-color: #007e7e;
-        background-image: url('images/cocktail.gif');
-        background-repeat: repeat-x;
+    div#elixirs {
+        line-height: 1;
+        border: thin solid #007e7e;
+        background: url('images/cocktail.gif') repeat-x;
         padding: 0 20px 20px 20px;
         margin-left: 20px;
         text-align: center;
         width: 200px;
+        float: right;
     }
 
-    #elixirs h3 {
+    div#elixirs > h2 {
+        color: black;
+    }
+
+    div#elixirs > h3 {
         color: #d12c47;
     }
 
-    #elixirs p {
-        line-height: 120%;
+    div#elixirs > a {
+        color: #007e7e;
     }
 
-    #elixirs a {
+    span.cd {
+        font-style: italic;
+    }
+
+    span.artist {
+        font-weight: bold;
+    }
+    
+    a:link {
         color: #007e7e;
+    }
+
+    a:visited {
+        color: #333;
+    }
+
+    div#elixirs a:hover {
+        color: #0d5353;
+        background: #f88396;
+    }
+
+    div#footer p {
+        font-size: 50%;
+        line-height: normal;
+        margin-top: 30px;
+        text-align: center;
     }
 }

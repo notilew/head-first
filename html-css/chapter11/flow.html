@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flow of Elements</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        div#flow-bloco>p#flow-bloco-01 {
+            margin-bottom: 10px;
+        }
+        
+        div#flow-bloco>p#flow-bloco-02 {
+            margin-top: 20px;
+        }
+        
+        div#flow-linha>p {
+            margin: 0 auto;
+            width: 634px;
+        }
+        
+        div#flow-linha>p>img {
+            width: 300px;
+        }
+        
+        div#flow-linha>p>img#img-01 {
+            margin-right: 10px;
+        }
+        
+        div#flow-linha>p>img#img-02 {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>consectetur adipiscing elit</h1>
+
+    <h2>Pellentesque</h2>
+    <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    </p>
+
+    <h2>pharetra consectetur</h2>
+    <p>
+        <span>Nam quis elit</span>
+    </p>
+    <p>
+        Ut consequat tellus semper lacus mattis, sollicitudin dictum leo facilisis. Nulla a odio eu leo posuere porttitor ut et nisi. Etiam lobortis egestas dolor, nec tincidunt libero tempus eu. Vivamus ac maximus turpis. Vivamus iaculis, ligula at eleifend
+        facilisis, lectus libero dictum velit, et viverra velit magna id lectus. Cras eget dui quis ante scelerisque elementum.
+    </p>
+    <p>
+        <img src="html.jpg" alt="Tag HTML" width="350" height="197">
+        <img src="html.jpg" alt="Tag HTML" width="350" height="197">
+        <img src="html.jpg" alt="Tag HTML" width="350" height="197">
+        <img src="html.jpg" alt="Tag HTML" width="350" height="197">
+    </p>
+
+    <div id="flow-bloco">
+        <p id="flow-bloco-01">
+            Ut consequat tellus semper lacus mattis, sollicitudin dictum leo facilisis. Nulla a odio eu leo posuere porttitor ut et nisi. Etiam lobortis egestas dolor, nec tincidunt libero tempus eu. Vivamus ac maximus turpis. Vivamus iaculis, ligula at eleifend
+            facilisis, lectus libero dictum velit, et viverra velit magna id lectus. Cras eget dui quis ante scelerisque elementum.
+        </p>
+        <p id="flow-bloco-02">
+            Ut consequat tellus semper lacus mattis, sollicitudin dictum leo facilisis. Nulla a odio eu leo posuere porttitor ut et nisi. Etiam lobortis egestas dolor, nec tincidunt libero tempus eu. Vivamus ac maximus turpis. Vivamus iaculis, ligula at eleifend
+            facilisis, lectus libero dictum velit, et viverra velit magna id lectus. Cras eget dui quis ante scelerisque elementum.
+        </p>
+    </div>
+
+    <div id="flow-aninhado">
+        <p>
+            Ut consequat tellus semper lacus mattis, sollicitudin dictum leo facilisis. Nulla a odio eu leo posuere porttitor ut et nisi. Etiam lobortis egestas dolor, nec tincidunt libero tempus eu. Vivamus ac maximus turpis. Vivamus iaculis, ligula at eleifend.
+        </p>
+
+        <blockquote>
+            <p>
+                Ut consequat tellus semper lacus mattis, sollicitudin dictum leo facilisis. Nulla a odio eu leo posuere porttitor ut et nisi. <strong>Etiam lobortis egestas dolor</strong>, nec tincidunt libero tempus eu. Vivamus ac maximus turpis. Vivamus iaculis, ligula at eleifend.
+            </p>
+
+            <p>
+                Ut consequat tellus semper lacus mattis, sollicitudin dictum leo facilisis. Nulla a odio eu leo posuere porttitor ut et nisi. Etiam lobortis egestas dolor, nec tincidunt libero tempus eu. Vivamus ac maximus turpis. Vivamus iaculis, ligula at eleifend.
+            </p>
+        </blockquote>
+    </div>
+
+    <div id="flow-linha">
+        <p>
+            <img id="img-01" src="html.jpg" alt="Tag HTML" width="350" height="197">
+            <img id="img-02" src="html.jpg" alt="Tag HTML" width="350" height="197">
+        </p>
+    </div>
+</body>
+
+</html>

@@ -85,7 +85,11 @@ Endereço para pesquisa de codificação de caracteres.
 
   font-style:
 
-* Define o espaço entre as linhas em um elemento de texto.
+* Altera o estilo de fonte para maiúsculas de menor altura (normal, small-caps).
+
+    font-variant:
+
+* Define o espaço entre as linhas em um elemento de texto, pode ser especificado em px, porcentagem, em (escala) ou apenas números, nesse último caso o line-height será baseado no tamanho de fonte do próprio elemento.
 
   line-height:
 
@@ -93,7 +97,7 @@ Endereço para pesquisa de codificação de caracteres.
 
   letter-spacing:
 
-* Alinha o texto à esquerda, à direita, centralizado ou justificado (left, right, center, justify).
+* Alinha todo o conteúdo em linha em um elemento de bloco à esquerda, à direita, centralizado ou justificado (left, right, center, justify).
 
   text-align:
 
@@ -190,6 +194,42 @@ Endereço para pesquisa de codificação de caracteres.
 
   background-repeat:
 
+===================
+=== ATALHOS CSS ===
+===================
+
+* Podemos especificar regras css utilizando atalhos.
+
+    padding: 0px 'em cima' 10px 'na direita' 10px 'em baixo' 10px 'na esquerda';
+    padding: 0px 'em cima e em baixo' 10px 'na direita e na esquerda';
+    padding: 10px 'em todos os lados';
+
+    margin: 0px 'em cima' 10px 'na direita' 10px 'em baixo' 10px 'na esquerda';
+    margin: 0px 'em cima e em baixo' 10px 'na direita e na esquerda';
+    margin: 10px 'em todos os lados';
+
+* Pode-se reescrever as propriedades da borda como uma única propriedade. Elas podem estar em qualquer ordem. O atalho da borda é ainda mais flexível que o das margens e enchimento, porque você pode específica-lo em qualquer ordem que quiser.
+
+    border: thin solid #007e7e;
+    border: solid thin #007e7e;
+    border: #007e7e solid thin;
+
+* Também são atalhos para borda perfeitamente válidos.
+
+    border: solid thin;
+    border: #007e7e solid;
+    border: solid;
+
+* Pode-se utilizar atalhos para o fundo dos elementos. Assim como a borda, os valores podem estar em qualquer ordem neste atalho. Há também alguns outros valores que podem ser especificados no atalho, como background-position.
+
+    background: blue url('images/cocktail.gif') repeat-x;
+
+* Também podemos utilizar um atalho para as fontes.
+
+    font: font-style font-variant font-weight font-size/line-height font-family;
+
+* As propriedades font-style, font-variant e font-weight são opcionais e pode-se utilizar qualquer combinação com elas, mas elas devem vir antes da propriedade font-size. A propriedade line-height é opcional, se você quiser especificar uma, coloque apenas uma / depois de font-size e adicione a altura de sua linha.
+
 ===================================
 === AJUSTANDO TAMANHO DE FONTES ===
 ===================================
@@ -285,6 +325,7 @@ Endereço para pesquisa de codificação de caracteres.
   <link type="text-css" rel="stylesheet" href="style.css" media="print">
 
   @media screen and (max-device-width: 480px) and (orientation: portrait) {
+
     h3 {
       color: red; 
 
@@ -293,6 +334,7 @@ Endereço para pesquisa de codificação de caracteres.
   }
 
   @media screen and (min-device-width: 1024px) and (orientation: landscape) {
+
     h3 {
       color: yellow; 
 
@@ -301,6 +343,7 @@ Endereço para pesquisa de codificação de caracteres.
   }
 
   @media print {
+
     h3 {
       color: green; 
 
@@ -309,7 +352,9 @@ Endereço para pesquisa de codificação de caracteres.
   }
 
   h3 {
+
     color: blue; 
+
   }
 
   Apenas as regras CSS que são específicas para um tipo de mídia estão incluídas em uma regra @media. Todas as regras comuns a todos os tipos de mídia estão incluídos no arquivo CSS abaixo das regras @media, então dessa forma você não tem nenhum regra repetida desnecessariamente.
@@ -323,3 +368,156 @@ Endereço para pesquisa de codificação de caracteres.
     - https://www.w3.org/TR/css3-mediaqueries/
     - Livro: Head First Mobile Web
 
+=====================
+=== SELETORES CSS ===
+=====================
+
+* Seletor CSS de descendentes seleciona um elemento que seja descendente de um certo elemento pai não importando em qual nível da árvore ele esteja, ou seja, não importa se o elemento é um filho direto ou não.
+
+    - div h2 {
+
+        color: blue; 
+
+    }
+
+* Seletor CSS de filho direto seleciona o elemento caso ele seja filho direto de um certo elemento pai.
+
+    - div > h2 {
+
+        color: blue; 
+
+    }
+
+=================================
+=== TAGS DE ESTRUTURAÇÃO HTML ===
+=================================
+
+* a tag <div> permite que você crie separações lógicas para o conteúdo de bloco. Essa tag é estrutura pura, não contendo nenhuma propriedade css, tais como: margin ou padding.
+
+    <div id="pets">
+        <div id="caes">
+            <p>
+                Caẽs
+            </p>
+        </div>
+        <div id="gatos">
+            <p>
+                Gatos
+            </p>
+        </div>
+    </div>
+
+* a tag <span> oferece uma maneira de separar logicamente o conteúdo em linha. Essa tag é estrutura pura, não contendo nenhuma propriedade css, tais como: margin ou padding.
+
+    <ul>
+        <li><span class="artistas">Barão Vermelho</span>, <span class="musicas">Música 01</span></li>
+        <li><span class="artistas">Charlie Brown Júnior</span>, <span class="musicas">Música 02</span></li>
+        <li><span class="artistas">Cazuza</span>, <span class="musicas">Música 03</span></li>
+    </ul>
+
+==============================
+=== ESTILO DO ELEMENTO <a> ===
+==============================
+
+* Diferente de outros elementos, o estilo do elemento <a> muda dependendo de seu estado. Se o link nunca foi clicado (chamado de link não visitado ou apenas link), tem um estilo, se já foi clicado (chamado de link visitado), possui outro. E se você flutuar sobre o link (chamado de flutuação - manter o cursor do mouse sobre um link), ele pode ter ainda um terceiro estilo. Nessa última opção, será exibida uma dica ferramenta que exibe o texto do atributo title.
+
+* Podemos aplicar estilos ao elemento <a> baseados em seu estado utilizando as pseudo-classes.
+
+    - Quando um link ainda não foi visitado:
+
+        a:link {
+            color: green;
+        }
+    
+
+    - Quando um link foi visitado:
+
+        a:visited {
+            color: red;
+        }
+
+    - Quando um link estiver com foco (utilizando a tecla tab para pular de link):
+
+        a:focus {
+            color: pink;
+        }
+    
+
+    - Quando um link estiver em flutuação:
+
+        a:hover {
+            color: yellow
+        }
+
+    - Quando um link é clicado:
+
+        a:active {
+            color: blue;
+        }
+
+* Caso seja criado um estilo fixo para o elemento <a> ele terá a mesma aparência em todos os estados.
+
+* Também existem as pseudoclasses :first-child e :last-child que alteram os estilos de qualquer elemento que seja o primeiro filho de seus pais e qualquer elemento que seja o último filho de seus pais, respectivamente.
+
+    <div>
+        <span>Primeiro filho de div</span>
+        <span>Último filho de div</span>
+    </div>
+
+    - Selecionando a primeira span da div:
+
+        span:first-child {
+            color: green;
+        }
+
+    - Selecionando a última span da div:
+
+        span:last-child {
+            color: red;
+        }
+
+=================
+=== A CASCATA ===
+=================
+
+* Existem outros tipo de folhas de estilo quando um usuário visita uma página web: (Folhas do autor da página, do leitor da página e do browser). Além disso, um usuário pode anular alguma regra de estilo adicionando !important ao final de uma declaração de prorpriedade (font-size: 150% !important; ). Para descobrir qual regra CSS que o browser utilizará em um elemento, deve-se seguir a regra abaixo.
+
+    - Primeiro Passo: Junte todas as folhas de estilo, as folhas do autor da página, do leitor da página e do browser.
+    - Segundo Passo: Encontre todas as declarações que coincidam.
+    - Terceiro Passo: Pegue todas as ocorrências e as ordene.
+    - Quarto Passo: Ordene todas as declarações por sua especificidade (por especificidade de seletor).
+    - Quinto Passo: Finalmente, ordene quaisquer regras em conflito na ordem em que elas aparecem em sua folhas de estilo individuais.
+
+* A primeira regra na lista ordenada será a que o browser utilizará.
+
+=================================================
+=== CALCULANDO A ESPECIFICIDADE DE UM SELETOR ===
+=================================================
+
+* Para calcular a especificidade, você começa com um conjunto de três números, assim: 000. E então, nós apenas calculamos algumas ocorrências no seletor, a cada ocorrência, um ponto, da esquerda para direita. As ocorrências são:
+
+    - O seletor possui algum nome de elemento? Um ponto para cada;
+    - O seletor possui classes ou pseudoclasses? Um ponto para cada;
+    - O seletor possui algum id? Um ponto para cada;
+
+        * h1.greentea: 011
+        * p img: 002
+        * a:link: 011
+        * ol li p: 003
+        * .green: 010
+
+===========================
+=== FLUXO DOS ELEMENTOS ===
+===========================
+
+* O fluxo é aquilo que o browser utiliza para organizar a página de elementos HTML. O browser começa do topo de qualquer arquivo HTML e segue o fluxo dos elementos do início até o final, exibindo cada elemento que encontrar.
+
+    - Fluxo dos elementos de bloco: O browser segue o fluxo do arquivo HTML e, considerando apenas os elementos de bloco por um momento, ele coloca uma quebra de linha entre cada um deles.
+
+    - Fluxo dos elementos de linha: Os elementos de linha têm seu fluxo próximo uns dos outros, horizontalmente, do canto superior esquerdo até o canto inferior direito.
+
+* O browser trata as margens de maneira diferente, dependendo do tipo de elemento que está sendo colocado na página.
+
+    - Quando o browser estiver colocando dois elementos em linha próximos um do outro: Quando o browser tem a tarefa de colocar dois elementos em linha lado a lado, e tais elementos tiverem margens, então o browser cria espaço suficiente entre os elementos para acomodar as duas margens, isso com mais 4px ou 5px que é um valor padrão que o browser utiliza para separar dois elementos de linha. Assim, se o elemento da esquerda possui uma margem de 10px e o da direita uma de 20px, então haverá por volta de 34px ou 35px de espaço entre os dois elementos (dependendo do navegador).
+
+    - Quando o browser estiver colocando dois elementos de bloco, um em cima do outro: Quando o browser posiciona dois elementos de bloco, um em cima do outro, ele junta as duas margens e cria uma margem compartilhada. A altura da margem compartilhada será igual à altura da margem que seja maior. Digamos que a margem inferior do elemento de cima seja 10px, e a margem superior do elemento de baixo seja 20px. A margem compartilhada terá 20px.
