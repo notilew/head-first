@@ -1,0 +1,75 @@
+@media screen and (min-width: 480px) {
+    body {
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: #b5a789;
+        margin: 0px;
+    }
+    
+    div#header {
+        background-color: #675c47;
+        margin: 10px;
+        height: 108px;
+    }
+
+    div#main {
+        font-size: 105%;
+        background-color: #efe5d0;
+        background-image: url('images/background.gif');
+        background-position: top left;
+        padding: 15px;
+        margin: 0px 10px 10px 10px;
+    }
+
+    div#sidebar {
+        font-size: 105%;
+        background-color: #efe5d0;
+        background-image: url('images/background.gif');
+        background-position: bottom right;
+        padding: 15px;
+        margin: 0px 10px 10px 10px;
+        position: absolute;
+        top: 128px;
+        right: 0px;
+        width: 280px;
+    }
+
+    div#sidebar p.bean-heading {
+        line-height: 180%;
+        text-align: center;
+    }
+
+    div#sidebar span.slogan {
+        color: #954b4b;
+    }
+
+    div#footer {
+        font-size: 90%;
+        background-color: #675c47;
+        color: #efe5d0;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 120%;
+        color: #954b4b;
+    }
+
+    a:link {
+        color: #b76666;
+        text-decoration: none;
+        border-bottom-color: #b76666;
+        border-bottom-style: dotted;
+        border-bottom-width: thin;
+    }
+
+    a:visited {
+        color: #675c47;
+        text-decoration: none;
+        border-bottom-color: #675c47;
+        border-bottom-style: dotted;
+        border-bottom-width: thin;
+    }
+}

@@ -1,0 +1,44 @@
+@media screen and (min-width: 480px) {
+    body {
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #a9bcf5;
+        margin: 0px;
+        text-align: center;
+    }
+
+    div#all-content {
+        background-color: #e0f8e0;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    div#header,
+    div#aside,
+    div#main,
+    div#footer {
+        background-color: #fafafa;
+        padding: 1%;
+    }
+
+    div#header {
+        margin-bottom: 1%;
+    }
+
+    div#main {
+        margin-right: 320.5px;
+    }
+
+    div#aside {
+        background-color: red;
+        position: absolute;
+        margin-left: 1%;
+        width: 280px;
+        top: 93.468px;
+        right: 67.563px;
+    }
+
+    div#footer {
+        margin-top: 1%;
+    }
+}

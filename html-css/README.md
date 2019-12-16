@@ -109,7 +109,7 @@ Endereço para pesquisa de codificação de caracteres.
 
   background-color:
 
-* Controla o estilo visual da borda (solid, doube, groove, outset, inset, dotted, dashed e ridge).
+* Controla o estilo visual da borda (solid, double, groove, outset, inset, dotted, dashed e ridge).
 
   border-style:
 
@@ -521,3 +521,13 @@ Endereço para pesquisa de codificação de caracteres.
     - Quando o browser estiver colocando dois elementos em linha próximos um do outro: Quando o browser tem a tarefa de colocar dois elementos em linha lado a lado, e tais elementos tiverem margens, então o browser cria espaço suficiente entre os elementos para acomodar as duas margens, isso com mais 4px ou 5px que é um valor padrão que o browser utiliza para separar dois elementos de linha. Assim, se o elemento da esquerda possui uma margem de 10px e o da direita uma de 20px, então haverá por volta de 34px ou 35px de espaço entre os dois elementos (dependendo do navegador).
 
     - Quando o browser estiver colocando dois elementos de bloco, um em cima do outro: Quando o browser posiciona dois elementos de bloco, um em cima do outro, ele junta as duas margens e cria uma margem compartilhada. A altura da margem compartilhada será igual à altura da margem que seja maior. Digamos que a margem inferior do elemento de cima seja 10px, e a margem superior do elemento de baixo seja 20px. A margem compartilhada terá 20px.
+
+* Propriedades que controlam o fluxo:
+
+* A propriedade float faz com que um elemento flutue o mais para a esquerda ou o mais para a direita que conseguir (com base nos valores left ou right). Quando um elemento está flutuando, ele é retirado do fluxo e os outros elementos abaixo dele ficam sob o elemento em questão. Os elementos que estão no fluxo respeitam a borda do elemento em flutuação, deixando seu conteúdo em torno do elemento que flutua. Lembrando que, para fazer com que um elemento flutue, é necessário dar uma largura (width) para ele.
+
+    float:
+
+* Podemos definir a propriedade clear em um elemento para solicitar que, a medida que o elemento tiver seu fluxo na página, não seja permitido nenhum conteúdo que esteja flutuando à sua direita, esquerda ou em ambos os lados (right, left ou both).
+
+    clear:

@@ -1,0 +1,41 @@
+@media screen and (min-width: 480px) {
+    body {
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: red;
+        margin: 0px;
+        text-align: center;
+    }
+
+    div#all-content {
+        background-color: #82fa58;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    div#header,
+    div#aside,
+    div#main,
+    div#footer {
+        background-color: #faac58;
+        padding: 4%;
+    }
+
+    div#header {
+        margin-bottom: 1%;
+    }
+
+    div#main {
+        float: left;
+        margin-right: 1%;
+        width: 60%;
+    }
+
+    div#aside {
+        margin-left: 69%;
+    }
+
+    div#footer {
+        margin-top: 1%;
+    }
+}
