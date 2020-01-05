@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Layout 01</title>
+    <style>
+        @media screen and (min-width: 480px) and (orientation: landscape) {
+
+            div#header,
+            div#nav,
+            div#section,
+            div#article,
+            div#aside,
+            div#footer {
+                font-size: 150%;
+                background-color: orange;
+                padding: 30px;
+                margin: 0 0 20px 0;
+                text-align: center;
+            }
+
+            div#section,
+            div#article {
+                margin-right: 10px;
+                width: 750px;
+                float: left;
+            }
+
+            div#aside {
+                margin-left: 820px;
+            }
+
+            div#footer {
+                clear: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            Lorem ipsum dolor sit amet
+        </div>
+
+        <div id="nav">
+            <a href="#" title="consectetur adipiscing elit">consectetur adipiscing elit</a>
+        </div>
+
+        <div id="section">
+            <p>
+                Praesent blandit eget risus malesuada ornare. Cras ex dui, placerat in enim vel, accumsan mollis dolor.
+                Nulla id auctor nisl. Donec nec cursus felis, ut pretium lorem. Maecenas ac congue turpis, a pharetra
+                ipsum. Duis id ligula eu libero consectetur fringilla. Quisque malesuada lorem nec quam pharetra, sit
+                amet facilisis neque ultrices. Sed lacinia nisl eu velit gravida dignissim. Donec egestas tincidunt
+                sapien. Etiam sit amet volutpat enim. Suspendisse aliquet aliquet porta.
+            </p>
+            <p>
+                Praesent blandit eget risus malesuada ornare. Cras ex dui, placerat in enim vel, accumsan mollis dolor.
+                Nulla id auctor nisl. Donec nec cursus felis, ut pretium lorem. Maecenas ac congue turpis, a pharetra
+                ipsum. Duis id ligula eu libero consectetur fringilla. Quisque malesuada lorem nec quam pharetra, sit
+                amet facilisis neque ultrices. Sed lacinia nisl eu velit gravida dignissim. Donec egestas tincidunt
+                sapien. Etiam sit amet volutpat enim. Suspendisse aliquet aliquet porta.
+            </p>
+        </div>
+
+        <div id="article">
+            <p>
+                Praesent blandit eget risus malesuada ornare. Cras ex dui, placerat in enim vel, accumsan mollis dolor.
+                Nulla id auctor nisl. Donec nec cursus felis, ut pretium lorem. Maecenas ac congue turpis, a pharetra
+                ipsum. Duis id ligula eu libero consectetur fringilla. Quisque malesuada lorem nec quam pharetra, sit
+                amet facilisis neque ultrices. Sed lacinia nisl eu velit gravida dignissim. Donec egestas tincidunt
+                sapien. Etiam sit amet volutpat enim. Suspendisse aliquet aliquet porta.
+            </p>
+            <p>
+                Praesent blandit eget risus malesuada ornare. Cras ex dui, placerat in enim vel, accumsan mollis dolor.
+                Nulla id auctor nisl. Donec nec cursus felis, ut pretium lorem. Maecenas ac congue turpis, a pharetra
+                ipsum. Duis id ligula eu libero consectetur fringilla. Quisque malesuada lorem nec quam pharetra, sit
+                amet facilisis neque ultrices. Sed lacinia nisl eu velit gravida dignissim. Donec egestas tincidunt
+                sapien. Etiam sit amet volutpat enim. Suspendisse aliquet aliquet porta.
+            </p>
+        </div>
+
+        <div id="aside">
+            <p>
+                <img src="mussum.jpeg" alt="Mussum Ipsum" width="440" height="260">
+                <img src="mussum.jpeg" alt="Mussum Ipsum" width="440" height="260">
+                <img src="mussum.jpeg" alt="Mussum Ipsum" width="440" height="260">
+            </p>
+        </div>
+
+        <div id="footer">
+            &copy; Suspendisse aliquet aliquet porta.
+        </div>
+    </div>
+</body>
+
+</html>
