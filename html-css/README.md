@@ -2,15 +2,15 @@
 === LIVRO DE REFERÊNCIA HTML ===
 ================================
 
-* HTML & XHTML: The DefinitiveGuide (O'Reilly).
+    * HTML & XHTML: The DefinitiveGuide (O'Reilly).
 
 ==============================
 === ENTIDADE DE CARACTERES ===
 ==============================
 
-* https://www.w3schools.com/html/html_entities.asp
-* http://www.unicode.org/charts/
-* http://www.unicode.org/
+    * https://www.w3schools.com/html/html_entities.asp
+    * http://www.unicode.org/charts/
+    * http://www.unicode.org/
 
 Observação: Seu browser só exibirá todos os caracteres se o seu computador ou dispositivo tiver a fonte apropriada instalada. Portanto, mesmo que você ainda conte com o fato de que as entidades básicas do site da w3schools estão disponíveis em qualquer browser, não há garantia de que você possa exibir todas essas entidades.
 
@@ -20,31 +20,31 @@ Observação: Seu browser só exibirá todos os caracteres se o seu computador o
 
 Empresa de Hospedagem
 
-  + https://www.000webhost.com
+    + https://www.000webhost.com
 
 Senha
 
-  + we33828470
+    + we33828470
 
 Domínio
 
-  + notilew.000webhostapp.com
+    + notilew.000webhostapp.com
 
 Site
 
-  + https://notilew.000webhost.com
+    + https://notilew.000webhost.com
 
 FTP
 
-  + files.000webhost.com
-  + 21
-  + notilew
-  + we33828470
+    + files.000webhost.com
+    + 21
+    + notilew
+    + we33828470
 
 Nome do Servidor
 
-  + ns01.000webhost.com
-  + ns02.000webhost.com
+    + ns01.000webhost.com
+    + ns02.000webhost.com
 
 ==========================
 === VALIDADOR HTML W3C ===
@@ -52,12 +52,12 @@ Nome do Servidor
 
 Para validar o tipo de documento utilizado no documento HTML e também se o código foi escrito corretamente.
 
-  + http://validator.w3.org/
+    + http://validator.w3.org/
 
 Endereço para pesquisa de codificação de caracteres.
 
-  + https://www.w3.org/International/tutorials/tutorial-char-enc/
-  + https://www.w3.org/International/O-charset.en.html
+    + https://www.w3.org/International/tutorials/tutorial-char-enc/
+    + https://www.w3.org/International/O-charset.en.html
 
 =======================
 === REFERÊNCIAS CSS ===
@@ -71,128 +71,140 @@ Endereço para pesquisa de codificação de caracteres.
 
 * Altera a família da fonte do texto de um elemento (serif, sans-serif, cursive, monospace, fantasy).
 
-  font-family:
+    font-family:
 
 * Torna o texto maior ou menor (px, %, em, keywords(small, medium, large...)).
 
-  font-size:
+    font-size:
 
 * Controla o negrito do texto (bold, normal).
 
-  font-weight:
+    font-weight:
 
 * Define um texto como oblíquo ou com itálico (oblique, italic).
 
-  font-style:
+    font-style:
 
 * Altera o estilo de fonte para maiúsculas de menor altura (normal, small-caps).
 
     font-variant:
 
-* Define o espaço entre as linhas em um elemento de texto, pode ser especificado em px, porcentagem, em (escala) ou apenas números, nesse último caso o line-height será baseado no tamanho de fonte do próprio elemento.
+* Define o espaço entre as linhas em um elemento de texto, pode ser especificado em px, %, em (escala) ou apenas números, nesse último caso o line-height será baseado no tamanho de fonte do próprio elemento.
 
-  line-height:
+    line-height:
 
 * Define o espaço entre as letras.
 
-  letter-spacing:
+    letter-spacing:
 
 * Alinha todo o conteúdo em linha em um elemento de bloco à esquerda, à direita, centralizado ou justificado (left, right, center, justify).
 
-  text-align:
+    text-align:
 
 * Altera a cor do texto de um elemento.
 
-  color:
+    color:
 
 * Altera a cor de fundo de um elemento.
 
-  background-color:
+    background-color:
 
 * Controla o estilo visual da borda (solid, double, groove, outset, inset, dotted, dashed e ridge).
 
-  border-style:
+    border-style:
 
-* Controla a espessura da borda, pode ser especificado por px ou palavras-chave (thin, medium e thick).
+* Controla a espessura da borda, pode ser especificado por px ou keywords (thin, medium e thick).
 
-  border-width:
+    border-width:
 
-* Controla a cor de uma borda, pode ser especificado com palavras chave, rgb ou hexadecimal.
+* Controla a cor de uma borda, pode ser especificado com keywords, rgb ou hexadecimal.
 
-  border-color:
+    border-color:
 
 * Controla a borda nos 4 lados.
 
-  border-top-color:
-  border-top-width:
-  border-top-style:
+    border-top-color:
+    border-top-width:
+    border-top-style:
 
-  border-right-color:
-  border-right-width:
-  border-right-style:
+    border-right-color:
+    border-right-width:
+    border-right-style:
 
-  border-bottom-color:
-  border-bottom-width:
-  border-bottom-style:
+    border-bottom-color:
+    border-bottom-width:
+    border-bottom-style:
 
-  border-left-color:
-  border-left-width:
-  border-left-style:
+    border-left-color:
+    border-left-width:
+    border-left-style:
 
 * Controla o arredondamento dos cantos das bordas, pode ser especificado em px ou em (escala).
 
-  border-radius:
+    border-radius:
 
 * Controla o arredondamento dos 4 cantos das bordas.
 
-  border-top-left-radius:
-  border-top-right-radius:
-  border-bottom-right-radius:
-  border-bottom-left-radius:
+    border-top-left-radius:
+    border-top-right-radius:
+    border-bottom-right-radius:
+    border-bottom-left-radius:
 
 * Altera a decoração de um texto do elemento (underline, overline e line-through).
 
-  text-decoration: underline; Adiciona um sublinhado abaixo do texto.
+    text-decoration: underline; Adiciona um sublinhado abaixo do texto.
 
 * Altera o espaço entre o limite de um elemento e seu conteúdo (enchimento), pode ser especificado com px ou % da área dentro da borda.
 
-  padding:
+    padding:
 
 * Altera o o espaço entre elementos (margem), pode ser especificado com px ou % da área dentro da borda.
 
-  margin:
-
-* Posiciona um elemento do lado esquerdo.
-
-  left:
-
-* Posiciona um elemento no topo da página.
-
-  top:
+    margin:
 
 * Especifica a largura da área de conteúdo de um elemento. Pode ser especificado em pixels ou em porcentagem.
 
-  width:
+    width:
 
 * Especifica a altura da área de conteúdo de um elemento. Pode ser especificado em pixels ou em porcentagem.
 
-  height:
+    height:
 
+* Posiciona um elemento do lado esquerdo.
+
+    left:
+
+* Posiciona um elemento no topo da página.
+
+    top:
+
+* Posiciona um elemento no lado direito.
+
+    right:
+
+* Posiciona um elemento na base da página.
+
+    bottom;
+  
 * Altera a aparência de itens de lista em uma lista.
 
-  list-style:
+    list-style:
 
 * Define a imagem do fundo de um elemento.
 
-  background-image: url(''); 
+    background-image: url(''); 
 
-* Fixa a posição da imagem de fundo, pode ser especificada em pixels, porcentagem ou usando palavras chaves (top, left, bottom, right ou center).
+* Fixa a posição da imagem de fundo, pode ser especificada em px, % ou usando keywords (top, left, bottom, right ou center).
 
-  background-position:
+    background-position:
 
-* Controla o ladrilhado (repetição) da imagem de fundo. Pode ser especificado: repeat - faz com que a imagem se repita tanto na horizontal, quanto na vertical. Esse é o comportamento padrão; no-repeat - mostra a imagem uma vez, não repete a imagem; repeat-x - repete a imagem apenas na horizontal; repeat-y - repete a imagem apenas na vertical; inherit - apenas faz o que o elemento pai fizer; 
+* Controla o ladrilhado (repetição) da imagem de fundo. Pode ser especificado:
+    repeat - faz com que a imagem se repita tanto na horizontal, quanto na vertical. Esse é o comportamento padrão; no-repeat - mostra a imagem uma vez, não repete a imagem;
+    repeat-x - repete a imagem apenas na horizontal;
+    repeat-y - repete a imagem apenas na vertical;
+    inherit - apenas faz o que o elemento pai fizer; 
 
-  background-repeat:
+    background-repeat:
 
 ===================
 === ATALHOS CSS ===
