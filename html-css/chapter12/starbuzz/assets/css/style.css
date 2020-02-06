@@ -1,0 +1,128 @@
+body {
+    background-color: #b5a789;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    line-height: 1.8em;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #954b4b;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+div#table {
+    display: table;
+    border-spacing: 10px;
+}
+
+div.table-row {
+    display: table-row;
+}
+
+section.table-cell,
+aside.table-cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+@media screen and (min-device-width: 800px) and (orientation: landscape) {
+
+    header.header {
+        background-color: #675c47;
+        margin: 10px 10px 0px 10px;
+        height: 108px
+    }
+
+    header.header img:last-child {
+        float: right;
+    }
+
+    section,
+    aside {
+        background-color: #efe5d0;
+        background-image: url('../img/background.gif');
+        background-position: top left;
+        padding: 15px;
+    }
+
+    section#drinks {
+        background-image: none;
+        width: 20%;
+    }
+
+    section#drinks p {
+        font-size: 1em;
+    }
+
+    section#main {
+        width: 50%;
+    }
+
+    aside {
+        background-position: top;
+        width: 30%;
+    }
+
+    aside p {
+        text-align: center;
+    }
+
+    aside p:last-child {
+        text-align: justify;
+    }
+
+    aside p span.slogan {
+        color: #954b4b;
+    }
+
+    footer {
+        background-color: #675c47;
+        color: #efe5d0;
+        font-size: 0.90em;
+        line-height: 1;
+        padding: 15px;
+        margin: 0px 10px 10px 10px;
+        text-align: center;
+    }
+
+    a:link {
+        border-bottom-style: dotted;
+        border-bottom-width: thin;
+        border-bottom-color: #b76666;
+        color: #b76666;
+        text-decoration: none;
+    }
+
+    a:visited {
+        border-bottom-style: dotted;
+        border-bottom-width: thin;
+        border-bottom-color: #675c47;
+        color: #675c47;
+        text-decoration: none;
+    }
+
+    div#award {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        z-index: 1;
+    }
+
+    div#coupon {
+        position: fixed;
+        top: 350px;
+        left: -90px;
+    }
+
+    div#coupon a {
+        border: none;
+    }
+
+}

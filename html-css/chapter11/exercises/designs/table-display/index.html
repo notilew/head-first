@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Table Display Layout</title>
+
+    <style>
+        div#table {
+            background: cyan;
+            display: table;
+        }
+
+        div#table-row {
+            background: magenta;
+            display: table-row;
+        }
+
+        div#table-col-1,
+        div#table-col-2 {
+            background: greenyellow;
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="table">
+        Table
+        <div id="table-row">
+            Row
+            <div id="table-col-1">
+                Col-1
+            </div>
+
+            <div id="table-col-2">
+                Col-2
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,15 +1,49 @@
+body {
+    font-size: smaller;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #b5a789;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 480px) {
-    body {
-        font-size: medium;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color: #b5a789;
-        margin: 0px;
-    }
-    
+
     div#header {
         background-color: #675c47;
-        margin: 10px;
+        margin: 10px 10px 0px 10px;
         height: 108px;
+    }
+
+    div#header img#slogan {
+        float: right;
+    }
+
+    div#award {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+    }
+
+    div#table {
+        display: table;
+        border-spacing: 10px;
+    }
+
+    div#table-row {
+        display: table-row;
+    }
+
+    div#drinks {
+        font-size: 105%;
+        background-color: #efe5d0;
+        background-position: top left;
+        display: table-cell;
+        padding: 15px;
+        text-align: justify;
+        width: 20%;
     }
 
     div#main {
@@ -17,8 +51,11 @@
         background-color: #efe5d0;
         background-image: url('images/background.gif');
         background-position: top left;
+        display: table-cell;
         padding: 15px;
-        margin: 0px 330px 10px 10px;
+        vertical-align: top;
+        text-align: justify;
+        width: 50%;
     }
 
     div#sidebar {
@@ -26,12 +63,10 @@
         background-color: #efe5d0;
         background-image: url('images/background.gif');
         background-position: bottom right;
-        position: absolute;
+        display: table-cell;
         padding: 15px;
-        margin: 0px 10px 10px 10px;
-        top: 128px;
-        right: 0px;
-        width: 280px;
+        vertical-align: top;
+        width: 30%;
     }
 
     div#sidebar p.bean-heading {
@@ -43,12 +78,16 @@
         color: #954b4b;
     }
 
+    div#sidebar p:last-child {
+        text-align: justify;
+    }
+
     div#footer {
         font-size: 90%;
         background-color: #675c47;
         color: #efe5d0;
         padding: 15px;
-        margin: 10px;
+        margin: 0px 10px 10px 10px;
         text-align: center;
     }
 
@@ -72,4 +111,15 @@
         border-bottom-style: dotted;
         border-bottom-width: thin;
     }
+
+    div#coupon {
+        position: fixed;
+        top: 350px;
+        left: -90px;
+    }
+
+    div#coupon a {
+        border: none;
+    }
+
 }

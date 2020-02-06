@@ -192,7 +192,11 @@ Endereço para pesquisa de codificação de caracteres.
 
 * Define a imagem do fundo de um elemento.
 
-    background-image: url(''); 
+    background-image: url('');
+
+* Controla a ordenação dos elementos em um eixo imaginário z-axis (pense nele como se apontando para fora de sua tela). É utilizado para indicar qual elemento posicionado absolutamente, relativamente ou fixo na página ficará sobre outro (position: absolute / relative / fixed).
+
+    z-index: 1;
 
 * Fixa a posição da imagem de fundo, pode ser especificada em px, % ou usando keywords (top, left, bottom, right ou center).
 
@@ -256,13 +260,13 @@ Endereço para pesquisa de codificação de caracteres.
 
     - font-size: 150%; 
 
-  + em - Você também pode especificar tamanhos de fontes usando 'em', que, como a porcentagem, é outra unidade relativa de medida. Com ele, você não especifica uma porcentagem, mas um fator de escala. Portanto, font-size: 1, 5em; informa que o tamanho da fonte do elemento em questão deve ser 1, 2 vezes maior que a fonte de seu elemento pai.
+  + em - Você também pode especificar tamanhos de fontes usando 'em', que, como a porcentagem, é outra unidade relativa de medida. Com ele, você não especifica uma porcentagem, mas um fator de escala. Portanto, font-size: 5em; informa que o tamanho da fonte do elemento em questão deve ser 5 vezes maior que a fonte de seu elemento pai.
 
-    - font-size: 1, 5em; 
+    - font-size: 5em; 
 
   + keywords - Há uma outra maneira de especificar tamanhos de fontes: palavras-chave. Você pode especificar um tamanho de fonte como: xx-small, x-small, small, smaller, medium, xx-large, x-large, large ou larger e o browser traduzirá essas palavras-chave para valores em pixels usando os padrões definidos no browser. Cada tamanho é cerca de 20% maior do que o anterior e small normalmente é definido em torno de 12 pixels.
 
-    - font-size: medium; 
+    - font-size: medium;
 
 ==================================
 === ESPECIFICANDO CORES DA WEB ===
@@ -282,7 +286,7 @@ Endereço para pesquisa de codificação de caracteres.
     - body { background-color: rgb(204, 102, 0); }
 
 * Especificação de cor usando códigos hexadecimais
-  + Cada conjunto de dois dígitos de um código hexadecimal representa apenas o componente de vermelhor, verde e azul da cor. Cada conjunto representa um número de 0 a 255 representados pelo sistema hexadecimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
+  + Cada conjunto de dois dígitos de um código hexadecimal representa apenas o componente de vermelho, verde e azul da cor. Cada conjunto representa um número de 0 a 255 representados pelo sistema hexadecimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
     - body { background-color: #cc6600; }
 
   + Para desmontar uma cor hexadecimal, separe cada conjunto e começando pela esquerda, se for uma letra, converta para o valor decimal, multiplique por 16 e some com o valor da direita, repita o processo nos três conjuntos.
@@ -319,7 +323,7 @@ Endereço para pesquisa de codificação de caracteres.
 
 * A caixa é composta por:
 
-  + A área de conteúdo armazena o conteúdo - um texto ou uma imagem, por exemplo.
+  + A área de conteúdo, armazena o conteúdo - um texto ou uma imagem, por exemplo.
   + A área de conteúdo é cercada por um enchimento transparente opcional.
   + Uma borda opcional pode ser colocada em torno do enchimento.
   + E, finalmente uma margem transparente opcional circunda tudo isso.
@@ -330,7 +334,7 @@ Endereço para pesquisa de codificação de caracteres.
 === MEDIA QUERIES ===
 =====================
 
-* Permite especificar regras de estilo CSS para diferentes dispositivos e telas. Podemos utilizar o recurso de media queries de duas formas: 1 - dentro do próprio elemento ou 2 - dentro de uma folha de estilo CSS. Existe uma grande variedade de propriedades que você pode usar em sua queries, como min-device-width: (dispositivo com largura mínima de), max-device-width: (dispositivo com largura máxima), print (quando o tipo de mídia for uma impressora, visualizando a página em uma impressora), orientation: (portrait (retrato), landscape (paisagem)), 
+* Permite especificar regras de estilo CSS para diferentes dispositivos e telas. Podemos utilizar o recurso de media queries de duas formas: 1 - dentro do elemento link ou 2 - dentro de uma folha de estilo CSS. Existe uma grande variedade de propriedades que você pode usar em suas queries, como min-device-width: (dispositivo com largura mínima de), max-device-width: (dispositivo com largura máxima), print (quando o tipo de mídia for uma impressora, visualizando a página em uma impressora), orientation: (portrait (retrato), landscape (paisagem)), 
 
   <link type="text-css" rel="stylesheet" href="style.css" media="screen and (max-device-width: 480px)">
   <link type="text-css" rel="stylesheet" href="style.css" media="screen and (min-device-width: 480px)">
@@ -339,8 +343,7 @@ Endereço para pesquisa de codificação de caracteres.
   @media screen and (max-device-width: 480px) and (orientation: portrait) {
 
     h3 {
-      color: red; 
-
+      color: red;
     }
 
   }
@@ -348,8 +351,7 @@ Endereço para pesquisa de codificação de caracteres.
   @media screen and (min-device-width: 1024px) and (orientation: landscape) {
 
     h3 {
-      color: yellow; 
-
+      color: yellow;
     }
 
   }
@@ -357,19 +359,16 @@ Endereço para pesquisa de codificação de caracteres.
   @media print {
 
     h3 {
-      color: green; 
-
+      color: green;
     }
 
   }
 
   h3 {
-
-    color: blue; 
-
+    color: blue;
   }
 
-  Apenas as regras CSS que são específicas para um tipo de mídia estão incluídas em uma regra @media. Todas as regras comuns a todos os tipos de mídia estão incluídos no arquivo CSS abaixo das regras @media, então dessa forma você não tem nenhum regra repetida desnecessariamente.
+  Apenas as regras CSS que são específicas para um tipo de mídia estão incluídas em uma regra @media. Todas as regras comuns a todos os tipos de mídia estão incluídos no arquivo CSS abaixo das regras @media, então, dessa forma você não tem nenhuma regra repetida desnecessariamente.
 
   As características de mídia max-device-width e min-device-width dependem do tamanho da tela do dispositivo (não da largura da janela do browser). E ser você se preocupar mais com o tamanho do browser? Bem, você pode usar as propriedades max-width e min-width, que representam a largura máxima e mínima da janela do browser (não o tamanho da tela).
 
@@ -387,17 +386,13 @@ Endereço para pesquisa de codificação de caracteres.
 * Seletor CSS de descendentes seleciona um elemento que seja descendente de um certo elemento pai não importando em qual nível da árvore ele esteja, ou seja, não importa se o elemento é um filho direto ou não.
 
     - div h2 {
-
-        color: blue; 
-
+        color: blue;
     }
 
 * Seletor CSS de filho direto seleciona o elemento caso ele seja filho direto de um certo elemento pai.
 
     - div > h2 {
-
-        color: blue; 
-
+        color: blue;
     }
 
 =================================
@@ -433,7 +428,7 @@ Endereço para pesquisa de codificação de caracteres.
 
 * Diferente de outros elementos, o estilo do elemento <a> muda dependendo de seu estado. Se o link nunca foi clicado (chamado de link não visitado ou apenas link), tem um estilo, se já foi clicado (chamado de link visitado), possui outro. E se você flutuar sobre o link (chamado de flutuação - manter o cursor do mouse sobre um link), ele pode ter ainda um terceiro estilo. Nessa última opção, será exibida uma dica ferramenta que exibe o texto do atributo title.
 
-* Podemos aplicar estilos ao elemento <a> baseados em seu estado utilizando as pseudo-classes.
+* Podemos aplicar estilos ao elemento <article> baseados em seu estado utilizando as pseudo-classes.
 
     - Quando um link ainda não foi visitado:
 
@@ -467,7 +462,7 @@ Endereço para pesquisa de codificação de caracteres.
             color: blue;
         }
 
-* Caso seja criado um estilo fixo para o elemento <a> ele terá a mesma aparência em todos os estados.
+* Caso seja criado um estilo fixo para o elemento <aside> ele terá a mesma aparência em todos os estados.
 
 * Também existem as pseudoclasses :first-child e :last-child que alteram os estilos de qualquer elemento que seja o primeiro filho de seus pais e qualquer elemento que seja o último filho de seus pais, respectivamente.
 
@@ -506,7 +501,7 @@ Endereço para pesquisa de codificação de caracteres.
 === CALCULANDO A ESPECIFICIDADE DE UM SELETOR ===
 =================================================
 
-* Para calcular a especificidade, você começa com um conjunto de três números, assim: 000. E então, nós apenas calculamos algumas ocorrências no seletor, a cada ocorrência, um ponto, da esquerda para direita. As ocorrências são:
+* Para calcular a especificidade, você começa com um conjunto de três números, assim: 000. E então, nós apenas calculamos algumas ocorrências no seletor, a cada ocorrência, um ponto, da direita para esquerda. As ocorrências são:
 
     - O seletor possui algum nome de elemento? Um ponto para cada;
     - O seletor possui classes ou pseudoclasses? Um ponto para cada;
@@ -538,8 +533,141 @@ Endereço para pesquisa de codificação de caracteres.
 
 * A propriedade float faz com que um elemento flutue o mais para a esquerda ou o mais para a direita que conseguir (com base nos valores left ou right). Quando um elemento está flutuando, ele é retirado do fluxo e os outros elementos abaixo dele ficam sob o elemento em questão. Os elementos que estão no fluxo respeitam a borda do elemento em flutuação, deixando seu conteúdo em torno do elemento que flutua. Lembrando que, para fazer com que um elemento flutue, é necessário dar uma largura (width) para ele.
 
-    float:
+    float: left;
 
 * Podemos definir a propriedade clear em um elemento para solicitar que, a medida que o elemento tiver seu fluxo na página, não seja permitido nenhum conteúdo que esteja flutuando à sua direita, esquerda ou em ambos os lados (right, left ou both).
 
-    clear:
+    clear: left;
+
+===============================
+=== POSICIONAMENTO ABSOLUTO ===
+===============================
+
+* Quando um elemento é posicionado de maneira absoluta, a primeira coisa que o browser faz é removê-lo completamente do fluxo. O absoluto tira um elemento totalmente do fluxo da página e permite que você o posicione em uma posição absoluta relativa ao mais próximo do elemento pai posicionado (que é o <body>, a menos que você especifique outro utilizando um elemento absoluto dentro de um elemento relativo). O browser então coloca o elemento na posição indicada pelas propriedades (top, right ou bottom e left). Os outros elementos que estão no fluxo o ignoram totalmente e eles não encaixam o seu conteúdo em linha em torno do elemento que está com o posicionamento absoluto. Isso é um pouco diferente de colocar um elemento para flutuar, porque os elementos que ficam no fluxo ajustam seu conteúdo em linha para respeitar os limites do elemento flutuante. Mas, elementos com posicionamento absoluto não possuem qualquer efeito sobre outros elementos.
+
+    #sidebar {
+        position: absolute;
+        top: 100px;
+        right: 200px;
+        width: 400px;
+    }
+
+    #sidebar {
+        position: absolute;
+        top: 10%;
+        right: 20%;
+        width: 60%;
+    }
+
+* Pode-se posicionar qualquer elemento de bloco ou em linha. Não é necessário definir uma largura para posicionar um elemento com absolute, mas se não o fizer, por padrão, o elemento de bloco ocupará toda a largura do browser, menos qualquer recuo especificado à direita ou à esquerda. Isso pode ser exatamente o que você quer, ou pode não ser. Portanto, defina a largura se quiser alterar esse comportamento padrão.
+
+===========================
+=== POSICIONAMENTO FIXO ===
+===========================
+
+* Comparado com o posicionamento absoluto, o posicionamento fixo é bem simples. Com ele, você especifica a posição de um elemento, mas a posição é recuada em relação ao limite da janela do browser ao invés de ser em relação à página, ou seja, um elemento posicionado absolutamente tem como limite toda a página, já um elemento posicionado fixadamente tem como limite a janela do browser, podendo ser posicionado negativamente. O efeito interessante disso é que uma vez que você coloque o conteúdo no posicionamento fixo, ele ficará exatamente onde você o colocou, e não se moverá nem mesmo quando você rolar a página.
+
+
+    #coupon {
+        position: fixed;
+        top: 350px;
+        left: -90px;
+    }
+
+===============================
+=== POSICIONAMENTO RELATIVO ===
+===============================
+
+* O posicionamento relativo, posiciona um elemento em relação ao elemento que o contém, deixando-o no fluxo normal, e então alterando-o conforme a quantidade que você especificar.
+
+    #coupon {
+        position: relative;
+        top: 20px;
+        left: -90px;
+    }
+
+* Pode-se usar técnicas de posicionamento juntas. Você pode posicionar em posição absoluta um div dentro de outro div, posicionando o div mais externo com relativo (deixando-o no fluxo) e então posicionar o div mais interno com absoluto, permitindo com que você o posicione em relação ao div pai.
+
+=====================
+=== TABLE DISPLAY ===
+=====================
+
+* Documentação da W3C:
+    - https://www.w3.org/TR/CSS2/tables.html#table-display
+
+* Para adicionar estrutura HTML para suportar a CSS table display faça o seguinte:
+
+    - Primeiro adicionamos um <div> para a tabela com um id, esse id contém as linhas e colunas, ou seja, essa <div> representa a estrutura da tabela inteira. Nós estilizamos o <div> assim:
+
+        - div#table {
+            display: table;
+        }
+
+    - Em seguida, adicionamos um <div> para a linha, com outro id, essa <div> representa a primeira linha da tabela. Se tivermos várias linhas, precisaríamos de vários <div>'s. Estilizamos essa(s) <div>'s assim:
+
+        - div.table-row {
+            display: table-row;
+        }
+
+    - Finalmente, podemos acrescentar outros <div>'s que serão as células que são correspondentes as colunas das linhas da tabela. Estilizamos essas <div>'s assim:
+
+        - div.table-cell {
+            display: table-cell;
+        }
+
+* Propriedades para table display:
+
+    * Acrescenta espaço de borda as células da tabela. É similar a propriedade margin dos elementos. Ao definir um elemento como tabela ele não possui mais margens e sim espaços de borda.
+
+        - div#table {
+            display: table;
+            border-spacing: 10px;
+        }
+
+    * Garante que todo conteúdo das células da tabela estejam alinhados ao (top, middle, bottom).
+
+        - div.table-cell {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+=============
+=== HTML5 ===
+=============
+
+* Site para suporte dos navegadores aos novos elementos do HTML5.
+
+    - https://caniuse.com/
+
+* Boa parte do markup do novo HTML5 é focado em reconhecer como as pessoas estruturam suas páginas com <div>'s e fornecer um markup que seja mais específico e masi adequado para certos tipos de estrutura.
+
+    Representa uma composição autocontida (trecho que pode ser retirado e colocado em outra página) em uma página, como um post de blog, de fórum de discussão, uma pequena noticia ou artigo de jornal: <article></article>
+
+    Conteúdo voltado para links de navegação da página: <nav></nav>
+
+    Conteúdo que fica no topo da página, ou no topo de uma seção de uma página: <header></header>
+
+    Conteúdo que fica embaixo na página, ou a parte de baixo de uma seção da página: <footer></footer>
+
+    Pode conter uma data, horário ou ambos: <time datetime=""></time>.
+    
+    Se estiver utilizando o atributo datetime="" para especificar uma data e/ou um horário, então pode-se escrever o que quiser como conteúdo para o elemento. Mais frequentimente, será um texto relacionado a data ou hora, como "18 de Fevereiro de 2012" ou até mesmo "Ontem" ou "Agora".
+    
+    O atributo datetime="" é necessário se o conteúdo do elemento não for escrito no formato oficial da internet para data/hora:
+
+        2012-02-18
+        2012-02
+        2012
+        2012-02-18 09:00
+        09:00
+        2012-02-18 09:00Z
+
+    Se usar um "Z" depois da data e horário, então significa horário UTC.
+
+    Seu conteúdo é suplementar ao conteúdo da página, como um aviso ou barra lateral: <aside></aside>
+
+    Um agrupamento temático de conteúdo relacionado, tipicamente com cabeçalho e possivelmente um rodapé: <section></section>
+
+    Usado para adicionar mídias de vídeo à sua página: <video></video>
+
+    Um agrupamento de conteúdo que pareça não relacionado: <div></div>

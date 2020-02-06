@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Absolute Position</title>
+        <style>
+            body {
+                background: black;
+            }
+
+            div#header {
+                background: greenyellow;
+            }
+
+            div#main {
+                background: greenyellow;
+            }
+
+            div#sidebar {
+                background: cornflowerblue;
+                position: absolute;
+                top: 106px;
+                right: 255px;
+                height: 400px;
+                width: 280px;
+            }
+
+            div#annoyingad {
+                background: crimson;
+                position: absolute;
+                top: 204px;
+                right: 200px;
+                width: 400px;
+            }
+
+            div#footer {
+                background: greenyellow;
+            }
+
+            div#header,
+            div#main,
+            div#sidebar,
+            div#annoyingad,
+            div#footer {
+                color: white;
+                padding: 30px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            Header
+        </div>
+
+        <div id="main">
+            Main
+        </div>
+
+        <div id="sidebar">
+            Sidebar
+        </div>
+
+        <div id="annoyingad">
+            Annoyingad
+        </div>
+
+        <div id="footer">
+            Footer
+        </div>
+    </body>
+</html>

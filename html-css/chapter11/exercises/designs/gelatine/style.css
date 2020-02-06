@@ -10,7 +10,10 @@
     div#all-content {
         background-color: #82fa58;
         width: 90%;
-        margin: 0px auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     div#header,
@@ -37,5 +40,6 @@
 
     div#footer {
         margin-top: 1%;
+        clear: left;
     }
 }
