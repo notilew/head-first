@@ -1,37 +1,38 @@
 @media screen and (min-width: 480px) and (orientation: landscape) {
     
-    div#aside {
+    aside#aside {
         float: left;
         padding: 0px;
         margin: 0px 15px 15px 15px;
         width: 30%;
     }
-    
-    div#main {
-        padding: 0px;
-        margin: 15px 15px 15px 32.084%;
-    }
-    
-    div.section {
-        padding: 25px;
-        margin-bottom: 15px;
-    }
-    
-    div#footer {
-        background-color: rgb(4, 138, 104);
-        color: rgb(255, 255, 255);
-        clear: left;
-        font-family: 'MontSerrat Regular', sans-serif;
-        padding: 25px;
-        margin: 15px 15px 0px 15px;
+
+    aside#aside div h2 {
+        margin: 0px;
+        position: relative;
+        top: -50px;
+        left: 25px;
     }
 
-    div#footer div {
-        text-align: center;
+    aside#aside section#personal p:first-child {
+        margin-top: 0px;
     }
 
-    div#aside,
-    div.section {
+    aside#aside img {
+        border-top-right-radius: 0.5em;
+        border-top-left-radius: 0.5em;
+    }
+
+    aside#aside section#personal {
+        padding: 0px 25px 0px 25px;
+    }
+
+    aside#aside section#personal ul li {
+        list-style-type: none;
+    }
+
+    aside#aside,
+    section#main section {
         background-color: rgb(255, 255, 255);
         border-style: solid;
         border-width: thin;
@@ -39,25 +40,30 @@
         border-radius: 0.5em;
     }
 
-    div#footer {
-        border-style: solid;
-        border-width: thin;
-        border-color: rgb(230, 230, 230);
-        border-radius: 0.5em;
+    section#main {
+        padding: 0px;
+        margin: 15px 15px 15px 32.084%;
+    }
+    
+    section#main section {
+        padding: 25px;
+        margin-bottom: 15px;
     }
 
-    div#aside img {
-        border-top-right-radius: 0.5em;
-        border-top-left-radius: 0.5em;
+    
+    
+    footer#footer {
+        background-color: rgb(4, 138, 104);
+        color: rgb(255, 255, 255);
+        clear: left;
+        font-family: 'MontSerrat Regular', sans-serif;
+        font-size: 0.85em;
+        padding: 10px 25px 25px 25px;
+        margin: 15px 0px 0px 0px;
     }
 
-    div#aside div#personal {
-        padding: 25px 25px 0px 25px;
-    }
-
-    div#aside h2 {
-        position: absolute;
-        top: 28%;
+    footer#footer p {
+        text-align: center;
     }
 
 }

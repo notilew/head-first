@@ -44,6 +44,34 @@ aside.table-cell {
         float: right;
     }
 
+    nav {
+        background-color: #efe5d0;
+        margin: 10px 10px 0px 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 5px 0px;
+        margin: 0px;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 5px 10px;
+        text-transform: uppercase;
+    }
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        border-bottom: none;
+        color: #954b4b;
+        font-weight: bold;
+    }
+
+    nav ul li.selected {
+        background-color: #c8b99c;
+    }
+
     section,
     aside {
         background-color: #efe5d0;

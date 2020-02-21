@@ -589,6 +589,22 @@ Endereço para pesquisa de codificação de caracteres.
 * Pode-se usar técnicas de posicionamento juntas. Você pode posicionar em posição absoluta um div dentro de outro div, posicionando o div mais externo com relativo (deixando-o no fluxo) e então posicionar o div mais interno com absoluto, permitindo com que você o posicione em relação ao div pai.
 
 =====================
+=== DISPLAY BLOCK ===
+=====================
+
+* Elementos com display: block terão um recuo antes e depois de suas margens superior e inferior, não permitindo que outros elementos fluam na mesma linha.
+
+    - ul li {
+        display: block;
+    }
+
+======================
+=== DISPLAY INLINE ===
+======================
+
+* Elementos com display: inline não terão o recuo antes e depois de suas margens superior e inferior, permitindo que outros elementos fluam na mesma linha.
+
+=====================
 === TABLE DISPLAY ===
 =====================
 
@@ -670,4 +686,4 @@ Endereço para pesquisa de codificação de caracteres.
 
     Usado para adicionar mídias de vídeo à sua página: <video></video>
 
-    Um agrupamento de conteúdo que pareça não relacionado: <div></div>
+    Um agrupamento de conteúdo que pareça não relacionado ou genérico: <div></div>
