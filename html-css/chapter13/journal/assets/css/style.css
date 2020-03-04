@@ -1,0 +1,90 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    line-height: 1.8em;
+}
+
+h1 {
+    font-family: 'Emblema One Regular';
+    font-size: 2.2em;
+}
+
+h1,
+section#main article header time {
+    color: #cc6600;
+}
+
+section#main article header time {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+section#main article header {
+    border-bottom-style: dotted;
+    border-bottom-width: thin;
+    border-bottom-color: #888;
+}
+
+section#main article table {
+    caption-side: bottom;
+    border: thin solid black;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+section#main article table caption {
+    font-style: italic;
+    padding-top: 8px;
+}
+
+section#main article table td,
+section#main article table th {
+    border: thin dotted gray;
+    padding: 5px;
+}
+
+section#main article table th {
+    background-color: #cc6600;
+}
+
+section#main article table tr:nth-child(odd) {
+    background-color: #fcba7a;
+}
+
+section#main article table td.center {
+    text-align: center;
+}
+
+section#main article table td.right {
+    text-align: right;
+}
+
+section#main article table table th.tess {
+    background-color: coral;
+}
+
+section#main article table table th.tony {
+    background-color: cornflowerblue;
+}
+
+section#main article table table tr:nth-child(odd) {
+    background-color: coral;
+}
+
+section#main article table table tr:nth-child(even) {
+    background-color: cornflowerblue;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul li {
+    list-style-image: url('../img/backpack.gif');
+    padding-top: 5px;
+    margin-left: 20px;
+}
