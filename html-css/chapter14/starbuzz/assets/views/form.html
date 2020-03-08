@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+
+    <link type="text/css" rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Starbuzz Bean Machine</h1>
+        <h2>Fill out the form below and click "order now" to order.</h2>
+    </header>
+
+    <section id="main">
+        <form class="table" action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+            <div class="table-row">
+                <p class="table-cell">Choose your beans:</p>
+                <p class="table-cell">
+                    <select name="beans">
+                        <option value="house">House Blend</option>
+                        <option value="bolivia">Shade Grown Bolivia Supremo</option>
+                        <option value="guatemala">Organic Guatemala</option>
+                        <option value="kenya">Kenya</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Type:</p>
+                <p class="table-cell">
+                    <input type="radio" name="beantype" value="whole"> Whole Bean <br>
+                    <input type="radio" name="beantype" value="ground" checked> Ground Bean
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Extras:</p>
+                <p class="table-cell">
+                    <input type="checkbox" name="extras[]" value="giftwrap"> Gift Wrap <br>
+                    <input type="checkbox" name="extras[]" value="catalog" checked> Include Catalog With Order
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Number of Bags:</p>
+                <p class="table-cell">
+                    <input type="number" name="bags" value="1" min="1" max="10" step="1">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Must Arrive by Date:</p>
+                <p class="table-cell">
+                    <input type="date" name="date">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Ship To:</p>
+                <p class="table-cell"></p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Name:</p>
+                <p class="table-cell">
+                    <input type="text" name="name" value="">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Address:</p>
+                <p class="table-cell">
+                    <input type="text" name="address" value="">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">City:</p>
+                <p class="table-cell">
+                    <input type="text" name="city" value="">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">State:</p>
+                <p class="table-cell">
+                    <input type="text" name="state" value="">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Zip:</p>
+                <p class="table-cell">
+                    <input type="text" name="zip" value="">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Phone:</p>
+                <p class="table-cell">
+                    <input type="tel" name="phone" value="">
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell">Customer Comments:</p>
+                <p class="table-cell">
+                    <textarea name="comments" rows="10" cols="30"></textarea>
+                </p>
+            </div>
+
+            <div class="table-row">
+                <p class="table-cell"></p>
+                <p class="table-cell">
+                    <input type="submit" value="Order Now">
+                </p>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
