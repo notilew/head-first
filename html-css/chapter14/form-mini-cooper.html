@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Choose Your Mini Cooper</title>
+    <link type="text/css" rel="stylesheet" href="form-mini-cooper.css">
 </head>
 
 <body>
@@ -13,32 +14,66 @@
 
     <section>
         <form action="http://www.chooseyourmini.com/choice.php" method="post">
-            <p>
-                Your information: <br>
-                Name: <input type="text" name="name" value="" maxlength="100"> <br>
-                Zip: <input type="text" name="zip" value="" maxlength="10">
-            </p>
-            <p>
-                Which model do you want? <br>
-                <select name="model">
-                    <option value="cooper">Mini Cooper</option>
-                    <option value="cooperS">Mini Cooper S</option>
-                    <option value="convertible">Mini Cooper Convertible</option>
-                </select>
-            </p>
-            <p>
-                Which color do you want? <br>
-                <input type="radio" name="color" value="chilired" checked> Chili Red <br>
-                <input type="radio" name="color" value="hyperblue"> Hyper Blue
-            </p>
-            <p>
-                Which options do you want? <br>
-                <input type="checkbox" name="caroptions[]" value="stripes" checked> Racing Stripes <br>
-                <input type="checkbox" name="caroptions[]" value="sportseats"> Sport Seats
-            </p>
-            <p>
-                <input type="submit" value="Order Now">
-            </p>
+            <div class="table">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <div class="table-row">
+                        <label for="name" class="table-cell">Name:</label>
+                        <div class="table-cell">
+                            <input type="text" name="name" value="" maxlength="100" id="name">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="zip" class="table-cell">Zip:</label>
+                        <div class="table-cell">
+                            <input type="text" name="zip" value="" maxlength="10" id="zip">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Models</legend>
+                    <div class="table-row">
+                        <label for="model" class="table-cell">Which model do you want?</label>
+                        <div class="table-cell">
+                            <select name="model" id="model">
+                                <option value="cooper">Mini Cooper</option>
+                                <option value="cooperS">Mini Cooper S</option>
+                                <option value="convertible">Mini Cooper Convertible</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Colors</legend>
+                    <div class="table-row">
+                        <label class="table-cell">Which color do you want?</label>
+                        <div class="table-cell">
+                            <input type="radio" name="color" value="chilired" id="chilired" checked>
+                            <label for="chilired">Chili Red</label>
+                        </div>
+                        <div class="table-cell">
+                            <input type="radio" name="color" value="hyperblue" id="hyperblue">
+                            <label for="hyperblue">Hyper Blue</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Options</legend>
+                    <div class="table-row">
+                        <label class="table-cell">Which options do you want?</label>
+                        <input type="checkbox" name="caroptions[]" value="stripes" id="stripes" checked>
+                        <label for="stripes">Racing Stripes</label>
+                        <input type="checkbox" name="caroptions[]" value="sportseats" id="sportseats">
+                        <label for="sportseats">Sport Seats</label>
+                    </div>
+                </fieldset>
+
+                <div class="table-row">
+                    <div class="table-cell">
+                        <input type="submit" value="Order Now">
+                    </div>
+                </div>
+            </div>
         </form>
     </section>
 </body>

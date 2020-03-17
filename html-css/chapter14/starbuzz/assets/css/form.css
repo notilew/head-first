@@ -6,6 +6,13 @@ body {
     margin: 0px;
 }
 
+section#main {
+    background-image: url('../img/background.gif');
+    background-position: top left;
+    margin: 10px;
+    width: auto;
+}
+
 h1 {
     font-size: 1.5em;
     color: #954b4b;
@@ -17,6 +24,14 @@ p {
     text-align: justify;
 }
 
+form {
+    background-color: #e1ceb8;
+    border-style: dotted;
+    border-width: thin;
+    border-color: #7e7e7e;
+    padding: 10px;
+}
+
 form.table {
     display: table;
 }
@@ -25,6 +40,22 @@ form div.table-row {
     display: table-row;
 }
 
-form p.table-cell {
+form div.table-row label:first-child {
+    text-align: right;
+}
+
+form p.table-cell,
+form label.table-cell {
     display: table-cell;
+    padding: 3px;
+    vertical-align: top;
+}
+
+form div.table-row p.heading {
+    font-weight: bold;
+}
+
+form textarea {
+    width: 500px;
+    height: 200px;
 }

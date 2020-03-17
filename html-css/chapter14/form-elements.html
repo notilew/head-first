@@ -3,60 +3,146 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Forms</title>
+    <title>Forms Elements HTML</title>
+    <link type="text/css" rel="stylesheet" href="form-elements.css">
 </head>
 
 <body>
-    <section id="main">
+    <header>
+        <h1>Form Elements HTML</h1>
+    </header>
+
+    <section>
         <form action="#" method="post">
-            <p>
-                Full Name: <input type="text" name="full-name" value="" maxlength="100">
-            </p>
-            <p>
-                <input type="radio" name="hotornot" value="hot" checked> Hot
-                <input type="radio" name="hotornot" value="not"> Not
-            </p>
-            <p>
-                <input type="checkbox" name="spice" value="Salt" checked> Salt <br>
-                <input type="checkbox" name="spice" value="Pepper"> Pepper <br>
-                <input type="checkbox" name="spice" value="Garlic"> Garlic
-            </p>
-            <p>
-                Age: <input type="number" name="age" min="0" max="100" step="1">
-            </p>
-            <p>
-                Range: <input type="range" name="range" min="0" max="100" step="10">
-            </p>
-            <p>
-                Color: <input type="color" name="color">
-            </p>
-            <p>
-                Date: <input type="date" name="date">
-            </p>
-            <p>
-                E-mail: <input type="email" name="email" maxlength="100">
-            </p>
-            <p>
-                Phone: <input type="tel" name="phone" maxlength="14">
-            </p>
-            <p>
-                URL: <input type="url" name="url" maxlength="100">
-            </p>
-            <p>
-                <textarea rows="10" cols="30" name="comments">Write your comment here...</textarea>
-            </p>
-            <p>
-                <select name="characteres">
-                    <option value="buckaroo">Buckaroo</option>
-                    <option value="tommy">Tommy</option>
-                    <option value="penny">Penny</option>
-                    <option value="jersey">Jersey</option>
-                    <option value="john">John</option>
-                </select>
-            </p>
-            <p>
-                <input type="submit" value="Submit">
-            </p>
+            <div class="table">
+                <fieldset>
+                    <legend>Log in</legend>
+                    <div class="table-row">
+                        <label for="name" class="table-cell">Name:</label>
+                        <div class="table-cell">
+                            <input type="text" name="name" placeholder="Your Name" maxlength="100" id="name">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="password" class="table-cell">Password:</label>
+                        <div class="table-cell">
+                            <input type="password" name="password" placeholder="Your Secret Password">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <div class="class-row">
+                        <label for="document" class="table-cell">Document:</label>
+                        <div class="table-cell">
+                            <input type="file" name="document" id="document">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="range" class="table-cell">Range:</label>
+                        <div class="table-cell">
+                            <input type="range" name="range" min="0" max="100" step="10" id="range">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="color" class="table-cell">Color:</label>
+                        <div class="table-cell">
+                            <input type="color" name="color" id="color">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="age" class="table-cell">Age:</label>
+                        <div class="table-cell">
+                            <input type="number" name="age" min="0" max="100" step="1" id="age">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="date" class="table-cell">Date:</label>
+                        <div class="table-cell">
+                            <input type="date" name="date" id="date">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="email" class="table-cell">E-mail:</label>
+                        <div class="table-cell">
+                            <input type="email" name="email" maxlength="100" id="email">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="phone" class="table-cell">Phone:</label>
+                        <div class="table-cell">
+                            <input type="tel" name="phone" maxlength="14" id="phone">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="url" class="table-cell">URL:</label>
+                        <div class="table-cell">
+                            <input type="url" name="url" maxlength="100" id="url">
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="characters" class="table-cell">Characters:</label>
+                        <div class="table-cell">
+                            <select name="characteres" id="characters">
+                                <option value="buckaroo">Buckaroo</option>
+                                <option value="tommy" selected>Tommy</option>
+                                <option value="penny">Penny</option>
+                                <option value="jersey">Jersey</option>
+                                <option value="john">John</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="model" class="table-cell">Model:</label>
+                        <div class="table-cell">
+                            <select name="model" id="model" multiple>
+                                <option value="mini-cooper" selected>Mini Cooper</option>
+                                <option value="mini-cooper-s">Mini Cooper S</option>
+                                <option value="mini-cooper-convertible">Mini Cooper Convertible</option>
+                                <option value="mini-cooper-suv">Mini Cooper SUV</option>
+                                <option value="mini-cooper-dual-port">Mini Cooper Dual Port</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <label for="comments" class="table-cell">Comments:</label>
+                        <div class="table-cell">
+                            <textarea rows="10" cols="30" name="comments" id="comments"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Options</legend>
+                    <div class="table-row">
+                        <label for="" class="table-cell"></label>
+                        <div class="table-cell">
+                            <input type="radio" name="hotornot" value="hot" id="hot" checked>
+                            <label for="hot">Hot</label>
+                            <input type="radio" name="hotornot" value="not" id="not">
+                            <label for="not">Not</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Condiments</legend>
+                    <div class="table-row">
+                        <label for="" class="table-cell"></label>
+                        <div class="table-cell">
+                            <input type="checkbox" name="spice" value="Salt" id="salt" checked>
+                            <label for="salt">Salt</label> <br>
+                            <input type="checkbox" name="spice" value="Pepper" id="pepper">
+                            <label for="pepper">Pepper</label> <br>
+                            <input type="checkbox" name="spice" value="Garlic" id="garlic">
+                            <label for="garlic">Garlic</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
         </form>
     </section>
 </body>
