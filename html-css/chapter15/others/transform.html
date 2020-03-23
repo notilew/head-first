@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Transforms and Transitions</title>
+
+    <style>
+        div#box {
+            background-color: crimson;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            transition: transform 2s;
+            -webkit-transition: -webkit-transform 2s;
+            -moz-transition: -moz-transition 2s;
+            -o-transition: -o-transition 2s;
+            height: 200px;
+            width: 200px;
+        }
+
+        div#box:hover {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Interactivity</title>
+</head>
+
+<body>
+    <section>
+        <form action="contest.php" method="post" id="form">
+            <fieldset>
+                <legend>Enter your Bet</legend>
+                <p>
+                    <label for="bet">Bet:</label>
+                    <input type="number" name="name" min="0" max="1000" step="1" id="bet" value="10">
+                </p>
+                <p>
+                    <input type="submit" value="Submit Bet" id="submit">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init() {
+            var submit = document.getElementById('submit');
+
+            submit.onclick = validBet;
+        }
+
+        function validBet() {
+            if (document.getElementById('bet').value > 0) {
+                document.getElementById('form').submit();
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

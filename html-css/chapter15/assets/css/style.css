@@ -1,0 +1,123 @@
+body {
+    border-style: solid;
+    border-width: thin;
+    border-color: #000;
+    border-radius: 0.3em;
+    font-family: 'Roboto Thin', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    font-size: medium;
+    line-height: 1.8em;
+    margin: 0px auto;
+    padding: 0px;
+    width: 80%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Black', sans-serif;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (min-width: 1335px) and (orientation: landscape) {
+
+    header {
+        background-color: #f78181;
+        padding: 15px 0px 5px 0px;
+    }
+
+    header > h1 {
+        color: #fff;
+        margin-top: 0px;
+    }
+
+    nav#menu {
+        border-style: solid;
+        border-width: thin;
+        border-color: #000;
+    }
+    
+    nav#menu ul li {
+        list-style: none;
+    }
+
+    nav#menu ul li a {
+        background-color: #f78181;
+        border-radius: 0.3em;
+        color: #fff;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+    nav#menu ul li a:hover {
+        font-weight: bold;
+    }
+
+    section {
+        border-left-style: solid;
+        border-left-width: thin;
+        border-left-color: #000;
+        float: right;
+        padding: 0px 20px;
+        width: 50%;
+    }
+
+    section figure {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    aside {
+        margin-right: 53.76%;
+    }
+
+    aside nav ol {
+        padding: 0px 40px 0px 40px;
+    }
+
+    aside nav ol li {
+        background-color: #f78181;
+        border-radius: 0.3em;
+        padding: 5px 0px 5px 20px;
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
+
+    aside nav ol li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    aside nav ol li a:hover {
+        font-weight: bold;
+    }
+
+    footer {
+        border-top-style: solid;
+        border-top-width: thin;
+        border-top-color: #000;
+        clear: right;
+        font-size: small;
+        padding: 15px;
+        text-align: center;
+    }
+
+}

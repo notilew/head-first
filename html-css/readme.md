@@ -234,6 +234,14 @@ Endereço para pesquisa de codificação de caracteres.
 
     background-repeat:
 
+* Transforma um elemento rotacionando-o em uma quantidade de graus definidos.
+
+    transform: rotate(45deg);
+
+* Transiciona um elemento caso alguma outra propriedade desse elemento for alterada.
+
+    transition: transform 2s;
+
 ===================
 === ATALHOS CSS ===
 ===================
@@ -419,6 +427,29 @@ Endereço para pesquisa de codificação de caracteres.
         color: blue;
     }
 
+* Seletores CSS de atributos selecionam elementos com base no valor de seus atributos.
+
+    Seleciona todas as imagens que possuam o atributo width no HTML.
+        - img[width] { border: black thin solid; }
+
+    Seleciona todas as imagens que possuam o atributo height igual à 300px.
+        - img[heigth="300"] { border: red thin solid; }
+
+    Seleciona todas as imagens que possuam o atributo alt que contenha a palavra flores.
+        - image[alt~="flowers"] { border: #ccc thin solid; }
+
+* Seletores CSS pelos irmãos selecionam os elementos com base em seu irmão precedente.
+
+    <header>
+        <h1>Título</h1>
+        <p>Parágrafo</p>
+    </header>
+
+    Seleciona todos os parágrafos que vêm imediatamente depois de um elemento <h1>.
+        - h1+p {
+            font-style: italic;
+        }
+
 =================================
 === TAGS DE ESTRUTURAÇÃO HTML ===
 =================================
@@ -446,9 +477,9 @@ Endereço para pesquisa de codificação de caracteres.
         <li><span class="artistas">Cazuza</span>, <span class="musicas">Música 03</span></li>
     </ul>
 
-==============================
-=== ESTILO DO ELEMENTO <a> ===
-==============================
+=====================
+=== PSEUDOCLASSES ===
+=====================
 
 * Diferente de outros elementos, o estilo do elemento <a> muda dependendo de seu estado. Se o link nunca foi clicado (chamado de link não visitado ou apenas link), tem um estilo, se já foi clicado (chamado de link visitado), possui outro. E se você flutuar sobre o link (chamado de flutuação - manter o cursor do mouse sobre um link), ele pode ter ainda um terceiro estilo. Nessa última opção, será exibida uma dica ferramenta que exibe o texto do atributo title.
 
@@ -519,6 +550,24 @@ Endereço para pesquisa de codificação de caracteres.
 
         p:nth-child(odd) {
             color: blue;
+        }
+        
+=======================
+=== PSEUDOELEMENTOS ===
+=======================
+
+* Os pseudoelementos podem ser usados para selecionar partes de um elemento que não possam ser colocados convenientemente em um <div> ou em um <span>, ou selecionados de alguma outra forma.
+
+    Seleciona a primeira letra do texto de um elemento de bloco.
+
+        p:first-letter {
+            font-size: 3em;
+        }
+
+    Seleciona a primeira linha de um elemento de bloco.
+
+        p:first-line {
+            font-style: italic;
         }
 
 =================
