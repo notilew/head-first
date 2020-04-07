@@ -23,7 +23,7 @@ Mas, na verdade, é sempre uma boa idéia dar um valor à variável assim que vo
 
   var populacao = 300;
   
-Constante - É um local na memória com um nome específico, mas seu valor nunca muda. Elas são criadas como variáveis inicializadas e o seu valor se tornará permanente. Constantes são úteis para armazenar informações que você poderia codificar diretamente em um script, como a alíquota de imposto sobre venda.
+Constante - É um local na memória com um nome específico, mas seu valor nunca muda. Elas são criadas como variáveis inicializadas e o seu valor se tornará permanente. Constantes são úteis para armazenar informações que você poderia codificar diretamente em um script, como a alíquota de imposto sobre venda. As constantes deve sempre ser inicializadas, ao não inicializar uma variável ou uma constante o javascript atribui a elas o estado undefined que indica a falta de dados (não possui valor).
 
 Crie uma constante usando a palavra chave const e o nome da nova constante.
 

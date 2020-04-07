@@ -1,3 +1,7 @@
+function placeOrder() {
+    
+}
+
 function updateOrder() {
   var numberOfCakeDonuts = document.getElementById('number-cake-donuts').value;
   var numberOfGlazedDonuts = document.getElementById('number-glazed-donuts').value;
@@ -5,9 +9,9 @@ function updateOrder() {
   var tax = calculateTaxRate(subtotal);
   var total = calculateTotal(subtotal, tax);
 
-  document.getElementById('subtotal').value = subtotal;
-  document.getElementById('tax').value = tax;
-  document.getElementById('total').value = total;
+  document.getElementById('subtotal').value = subtotal.toFixed(2);
+  document.getElementById('tax').value = tax.toFixed(2);
+  document.getElementById('total').value = total.toFixed(2);
 }
 
 function calculateSubtotal(numberOfCakeDonuts, numberOfGlazedDonuts) {

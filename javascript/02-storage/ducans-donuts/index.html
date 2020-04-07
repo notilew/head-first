@@ -49,19 +49,19 @@
           </p>
           <p>
             <label for="subtotal">Subtotal:</label>
-            <input type="number" name="subtotal" value="0" id="subtotal">
+            <input type="number" name="subtotal" value="0" id="subtotal" readonly>
           </p>
           <p>
             <label for="tax">Tax:</label>
-            <input type="number" name="tax" value="0" id="tax">
+            <input type="number" name="tax" value="0" id="tax" readonly>
           </p>
           <p>
             <label for="total">Total:</label>
-            <input type="number" name="total" value="0" id="total">
+            <input type="number" name="total" value="0" id="total" readonly>
           </p>
         </fieldset>
         <p>
-          <button type="button">Place Order</button>
+          <input type="button" value="Place Order" onclick="placeOrder(this.form);">
         </p>
       </form>
     </section>
