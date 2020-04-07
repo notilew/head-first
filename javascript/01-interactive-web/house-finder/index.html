@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>House Finder</title>
+  <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Ready to Find a Home?</h1>
+  </header>
+
+  <main>
+    <figure>
+      <img src="./assets/img/logo.png" alt="Logo" width="225" height="225">
+    </figure>
+
+    <section>
+      <form>
+        <fieldset>
+          <legend>Find Informations</legend>
+          <div class="table">
+            <div class="table-row">
+              <label for="income" class="table-cell">Income:</label>
+              <div class="table-cell">
+                <input type="text" name="income" size="20" placeholder="Your Income" id="income" onblur="validateNumber(this.value)">
+              </div>
+            </div>
+            
+            <div class="table-row">
+              <label for="bedrooms" class="table-cell">Bedrooms:</label>
+              <p class="table-cell">
+                <input type="text" name="bedrooms" size="20" placeholder="Number of Bedrooms" id="bedrooms">
+              </p>
+            </div>
+            
+            <div class="table-row">
+              <label for="zip" class="table-cell">Zip:</label>
+              <p class="table-cell">
+                <input type="text" name="zip" size="20" maxlength="9" placeholder="Your Zip Code" id="zip">
+              </p>
+            </div>
+            
+            <div class="table-row">
+             <label class="table-cell"></label>
+              <p class="table-cell">
+                <input type="button" value="Calculate Price" onclick="calculatePrice()">
+                <input type="button" value="Locate Houses">
+              </p>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

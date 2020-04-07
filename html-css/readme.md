@@ -347,6 +347,12 @@ Endereço para pesquisa de codificação de caracteres.
 * Google Fonts:
   + https://fonts.google.com/
 
+* Fonts.com
+  + https://www.fonts.com/
+
+* Extensis
+  + https://www.extensis.com/
+
 ===========================
 === MODELO DE CAIXA CSS ===
 ===========================
@@ -517,7 +523,7 @@ Endereço para pesquisa de codificação de caracteres.
             color: blue;
         }
 
-* Caso seja criado um estilo fixo para o elemento <a> ele terá a mesma aparência em todos os estados.
+* Caso seja criado um estilo fixo para o elemento <audio> ele terá a mesma aparência em todos os estados.
 
 * Também existem as pseudoclasses :first-child e :last-child que alteram os estilos de qualquer elemento que seja o primeiro filho de seus pais e qualquer elemento que seja o último filho de seus pais, respectivamente.
 
@@ -855,6 +861,15 @@ Endereço para pesquisa de codificação de caracteres.
 
     - Os codecs para mp4 são mais complicados do que os outros dois porque o H.264 suporta vários "perfis", codificações diferentes para usos diferentes. Então para fazer certo, você precisará conhecer mais detalhes sobre como seu vídeo foi codificado.
 
+=============
+=== ÁUDIO ===
+=============
+
+* O HTML lhe dá uma forma padronizada de tocar um áudio em suas paginas, sem um plugin, com o elemento <audio>.
+
+    <audio src="song.mp3" id="song" controls>
+        Desculpe, mas áudio não é suportado no seu navegador.
+    </audio>
 
 ===============
 === TABELAS ===

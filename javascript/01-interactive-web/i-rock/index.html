@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="wellington aparecido felix">
+  <meta name="description" content="a virtual page of the pet rock - irock">
+  <meta name="keywords" content="irock, interactive, virtual page, js, javascript">
+  <title>IRock - The Virtual Pet Rock</title>
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript">
+    function touchRock() {
+      var name = prompt('What is your name?', 'Enter your name here.');
+      
+      if (name) {
+        alert('Nice to meet you, ' + name + '.');
+        
+        document.getElementById('irock').src = './img/irock02.png';
+      }
+    }
+  </script>
+</head>
+
+<body onload="alert('Hello, I am the pet rock');">
+  <main>
+    <figure>
+      <img src="./img/irock01.png" alt="IRock" title="IRock" id="irock" onclick="touchRock();">
+      <figcaption>IRock - The Virtual Pet Rock</figcaption>
+    </figure>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body {
+  font-family: 'Ubuntu Regular', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  line-height: 1.4em;
+  padding: 0px;
+  margin: 0px auto;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Ubuntu Bold', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+header {
+  text-align: center;
+}
+
+aside {  
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+
+aside img {
+  padding-top: 100px;
+  height: 112px;
+  width: 127px;
+}
+
+main section form fieldset {
+  border-radius: 0.2em;
+}
+
+main section form label {
+  display: inline-block;
+  width: 225px
+}
+
+main section form fieldset + p {
+  text-align: right;
+  margin-top: 20px
+}

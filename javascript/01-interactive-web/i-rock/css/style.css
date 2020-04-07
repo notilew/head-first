@@ -1,0 +1,31 @@
+body {
+  background-color: #81bef7;
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 0px;
+  margin: 130px 450px;
+}
+
+main {
+  background-color: #fff;
+  border-style: solid;
+  border-width: thin;
+  border-color: #f2f2f2;
+  border-radius: 100em;
+  padding: 75px;
+}
+
+main figure {
+  text-align: center;
+}
+
+main figure img {
+  cursor: pointer;
+  width: 227px;
+  height: 190px;
+}
+
+main figure figcaption {
+  font-weight: bold;
+  margin-top: 10px;
+}
