@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Duncan's Just In Time Donuts</title>
+  <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+  <script type="text/javascript" src="./assets/js/donut-order.js"></script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Duncan's Just In Time Donuts!</h1>
+    <p>All donuts 50 cents each, cake or glazed.</p>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h2>Make your Wish</h2>
+        <p>
+          <img src="./assets/img/donut-time.png" alt="Just In Time Donut" title="Just In Time Donut" width="127" height="112">
+        </p>
+      </header>
+
+      <form>
+        <fieldset>
+          <legend>Donut Order</legend>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" size="30" maxlength="30" placeholder="Your name, please" id="name">
+          </p>
+          <p>
+            <label for="num-cake-donuts">Number of Cake Donuts:</label>
+            <input type="number" name="num-cake-donuts" value="0" min="0" step="1" max="100" id="num-cake-donuts" onchange="updateOrder();">
+          </p>
+          <p>
+            <label for="num-glazed-donuts">Number of Glazed Donuts:</label>
+            <input type="number" name="num-glazed-donuts" value="0" min="0" step="1" max="100" id="num-glazed-donuts" onchange="updateOrder();">
+          </p>
+          <p>
+            <label for="minutes-pickup">Minutes Until Pickup:</label>
+            <input type="number" name="minutes-pickup" value="10" min="10" step="10" max="60" id="minutes-pickup">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Order Price</legend>
+          <p>
+            <label for="subtotal">Subtotal:</label>
+            <input type="number" name="subtotal" value="0" id="subtotal">
+          </p>
+          <p>
+            <label for="tax">Tax:</label>
+            <input type="number" name="tax" value="0" id="tax">
+          </p>
+          <p>
+            <label for="total">Total</label>
+            <input type="number" name="total" value="0" id="total">
+          </p>
+          <p>
+            <input type="button" value="Place Order">
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

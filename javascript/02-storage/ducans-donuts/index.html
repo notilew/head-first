@@ -28,36 +28,36 @@
 
   <main>
     <section>
-      <form>
+      <form action="place-order.php" method="post">
         <fieldset>
           <legend>Donut Order</legend>
           <p>
             <label for="name">Name:</label>
-            <input type="text" name="name" size="30" maxlength="30" placeholder="Your name is here" id="name">
+            <input type="text" name="name" id="name" size="30" maxlength="30" placeholder="Your name is here">
           </p>
           <p>
             <label for="number-cake-donuts">Number of Cake Donuts:</label>
-            <input type="number" name="number-cake-donuts" value="0" min="0" max="100" step="1" id="number-cake-donuts" onchange="updateOrder();">
+            <input type="text" name="number-cake-donuts" id="number-cake-donuts" onchange="updateOrder();">
           </p>
           <p>
             <label for="number-glazed-donuts">Number of Glazed Donuts:</label>
-            <input type="number" name="number-glazed-donuts" value="0" min="0" max="100" step="1" id="number-glazed-donuts" onchange="updateOrder();">
+            <input type="text" name="number-glazed-donuts" id="number-glazed-donuts" onchange="updateOrder();">
           </p>
           <p>
             <label for="minutes-pickup">Minutes Until Pickup</label>
-            <input type="number" name="minutes-pickup" value="10" min="10" max="60" step="5" id="minutes-pickup">
+            <input type="text" name="minutes-pickup" id="minutes-pickup">
           </p>
           <p>
             <label for="subtotal">Subtotal:</label>
-            <input type="number" name="subtotal" value="0" id="subtotal" readonly>
+            <input type="text" name="subtotal" id="subtotal" value="0" readonly>
           </p>
           <p>
             <label for="tax">Tax:</label>
-            <input type="number" name="tax" value="0" id="tax" readonly>
+            <input type="text" name="tax" id="tax" value="0" readonly>
           </p>
           <p>
             <label for="total">Total:</label>
-            <input type="number" name="total" value="0" id="total" readonly>
+            <input type="text" name="total" id="total" value="0" readonly>
           </p>
         </fieldset>
         <p>

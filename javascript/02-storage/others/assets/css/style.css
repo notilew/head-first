@@ -1,0 +1,56 @@
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  
+  body {
+    font-family: 'Ubuntu Light', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+    line-height: 1.4em;
+    padding: 0px;
+    margin: 0px 10px;
+  }
+  
+  h1 {
+    font-family: 'Ubuntu Bold', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0px;
+  }
+  
+  header h1 + p {
+    margin-top: 5px
+  }
+  
+  main section form fieldset:first-child {
+    float: left;
+    margin-right: 10px;
+    width: 45%;
+  }
+  
+  main section form fieldset {
+    border-radius: 0.5em;
+  }
+  
+  main section form fieldset + fieldset p:last-child {
+    text-align: right;
+  }
+  
+  main section form label {
+    display: inline-block;
+  }
+  
+  main section form fieldset:first-child label {
+    width: 220px;
+  }
+  
+  main section form fieldset:last-child label {
+    width: 80px;
+  }
+  
+}
