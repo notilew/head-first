@@ -42,7 +42,7 @@ console.log(index);
  */
 
 /**
- * Retorna a última ocorrência de um caractere
+ * Retorna o índice da última ocorrência de um caractere
  * @argument string caractere a se pesquisado
  */
 console.log(`lastIndexOf: ${email.lastIndexOf('ol')}`);

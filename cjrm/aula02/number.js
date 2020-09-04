@@ -1,6 +1,7 @@
 /**
  * Number
  * São números inteiros ou decimais
+ * Possuem propriedades e métodos
  * Os números decimais devem ser separados por .
  * Seguem a precedência da matemática
  * Podem ser concatenados com string e o resultado sempre será uma string
