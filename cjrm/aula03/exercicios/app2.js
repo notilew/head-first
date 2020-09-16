@@ -13,7 +13,7 @@
 
 const my3FavoriteTVShows = ['Transformers', 'Game of Thrones', 'SmallVille'];
 
-const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(', ')}`;
+const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(', ').replace(', S', ' e S')}`;
 
 console.log(sentence)
 
@@ -65,7 +65,9 @@ console.log(typeSentence);
   caracteres? BOOLEAN."
 */
 
-console.log(`A string que a "typeSentece" armazena tem mais de 39 caracteres? ${String(typeSentence.length > 39)}`);
+const numberToCheck = 39;
+
+console.log(`A string que a "typeSentece" armazena tem mais de ${numberToCheck} caracteres? ${String(typeSentence.length > numberToCheck).replace('t', 'T')}`);
 
 /*
   06 - Comente o console.log() acima e:
@@ -77,7 +79,7 @@ console.log(`A string que a "typeSentece" armazena tem mais de 39 caracteres? ${
 
 const falsyValues = [0, "", false, '', ``, null, undefined, NaN];
 
-console.log()
+console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${falsyValues[2]}`);
 
 /*
   07 - Comente o console.log() acima e:
@@ -87,7 +89,10 @@ console.log()
   - Você sabe por que essa conversão resultou em true?
 */
 
+const crazyOperation = null + 1;
+const crazyConversion = Boolean(crazyOperation); // porque 1 é um valor truthy
 
+console.log(crazyConversion);
 
 /*
   08 - Comente o console.log() acima e:
@@ -100,7 +105,10 @@ console.log()
   é: BOOLEAN."
 */
 
+const ages = [31, 82, 61, 11];
+const agesSum = ages[0] + ages[2];
 
+console.log(`A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação é: ${agesSum <= 92}`);
 
 /*
   09 - Comente o console.log() acima e:
@@ -110,7 +118,9 @@ console.log()
   - Exiba a "isNotAString" no console.
 */
 
+const isNotAString = typeof randomTVShow !== 'string';
 
+console.log(isNotAString);
 
 /*
   10 - Comente o console.log() acima e:
@@ -119,4 +129,6 @@ console.log()
   - Não utilize o método includes desta vez.
 */
 
-const evenNumbers = [0, 2, 4, 6, 8, 10]
+const evenNumbers = [0, 2, 4, 6, 8, 10];
+
+console.log(evenNumbers.indexOf(8) !== -1);
