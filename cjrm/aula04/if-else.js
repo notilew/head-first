@@ -17,3 +17,10 @@ if (password.length >= 12 && password.includes('1')) {
 } else {
     console.log('senha é fraca');
 }
+
+// operador !
+const isUserLoggedIn = false;
+
+if (!isUserLoggedIn) {
+    console.log('você precisa logar para acessar o sistema.');
+}
