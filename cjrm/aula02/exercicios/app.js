@@ -95,7 +95,7 @@ console.log(randomWord[randomWord.length - 1]);
 
 const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 
-console.log(summerMessage.toLocaleLowerCase());
+console.log(summerMessage.toLoweCase());
 
 /*
 10 - Comente o console.log acima, e,

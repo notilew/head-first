@@ -29,7 +29,7 @@ console.log(fullName[6]);
 console.log(fullName.length);
 
 // métodos de string
-const result = fullName.toLocaleLowerCase();
+const result = fullName.toLowerCase();
 
 console.log(result);
 

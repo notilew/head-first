@@ -25,7 +25,7 @@ const name = 'wellington';
 /**
  * Em strings, o JavaScript considera as últimas letras do alfabeto sendo maiores que as primeiras
  * Em strings, o JavaScript considera as letras minúsculas maiores que as letras maiúsculas
- * Em strings, o JavaScript considera letras minúsculas diferente de letras maiúsculas
+ * Em strings, o JavaScript considera letras minúsculas diferentes das letras maiúsculas
  */
 
 console.log(name == 'palloma');
