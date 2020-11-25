@@ -23,7 +23,7 @@ console.log('\nExercício 01');
 
 let i = 0;
 
-while(i <= 5) {
+while (i <= 5) {
     console.log(i);
 
     i++;
@@ -137,6 +137,7 @@ const arrays = [
   [8, 32, 16],
   [2, 8, 4]
 ];
+
 let sumNumbersOfArrays = 0;
 
 for (let i = 0; i < arrays.length; i++) {

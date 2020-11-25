@@ -3,13 +3,14 @@
  * São conversões de dados que o próprio JavaScript realiza
  */
 
+let score = '100';
+
+console.log(`tipo de score: ${typeof score} ${score + 1}`); // 1001
+
 /**
  * Conversão Explícita de Dados
  * São conversões de dados que o próprio Desenvolvedor realiza
  */
-let score = '100';
-
-console.log(`tipo de score: ${typeof score} ${score + 1}`); // 1001
 
 score = Number(score);
 

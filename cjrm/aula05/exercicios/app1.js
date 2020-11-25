@@ -85,7 +85,7 @@ log(millennialWordsInUpperCase);
 
 const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3];
 
-function isPositive(number = o) {
+function isPositive(number = 0) {
     return number >= 1;
 }
 

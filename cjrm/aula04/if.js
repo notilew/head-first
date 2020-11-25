@@ -5,7 +5,7 @@ if (age > 18) {
     console.log('você tem mais de 18 anos.');
 }
 
-const simpsons = ['Merge','Homer', 'Lisa', 'Bart'];
+const simpsons = ['Merge', 'Homer', 'Lisa', 'Bart'];
 
 if (simpsons.length >= 3) {
     console.log('o array tem bastante personagens.');

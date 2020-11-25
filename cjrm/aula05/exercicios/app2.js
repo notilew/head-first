@@ -57,11 +57,11 @@ console.log(indexOfString('g', 'wellington'));
     passado por argumento existe no array (também passado por argumento).
 */
 
-const itemInTheArray = (item = '', array = []) => array.includes(item);
+const itemInArray = (item = '', array = []) => array.includes(item);
 
 const fruits = ['apple', 'tomato', 'banana', 'greenberry'];
 
-console.log(itemInTheArray('banana', fruits));
+console.log(itemInArray('banana', fruits));
 
 /*
   06
